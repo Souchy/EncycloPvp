@@ -1,0 +1,113 @@
+{
+  "name": "EncycloPvp",
+  "description": "An Aurelia client application.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "???",
+    "url": "???"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "aurelia-bootstrapper": "^2.4.0",
+    "aurelia-animator-css": "^1.0.4",
+    "whatwg-fetch": "^3.6.2",
+    "aurelia-fetch-client": "^1.8.2",
+    "bootstrap": "^4.6.1",
+    "popper.js": "^1.16.1",
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "aurelia-cli": "^3.0.0",
+    "aurelia-testing": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^6.0.0",
+    "minimatch": "^5.1.0",
+    "promise-polyfill": "^8.2.3",
+    "typescript": "^4.6.4",
+    "tslib": "^2.4.0",
+    "@types/node": "^17.0.35",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
+    "del": "^6.1.0",
+    "requirejs": "^2.3.6",
+    "text": "requirejs/text",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "gulp-less": "^5.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "connect": "^3.7.0",
+    "connect-history-api-fallback": "^1.6.0",
+    "connect-injector": "^0.4.4",
+    "serve-static": "^1.15.0",
+    "socket.io": "^4.5.1",
+    "open": "^8.4.0",
+    "server-destroy": "^1.0.1",
+    "debounce": "^1.2.1",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-watch": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "jest": "^28.1.0",
+    "jest-cli": "^28.1.0",
+    "jest-transform-stub": "^2.0.0",
+    "aurelia-loader-nodejs": "^1.1.0",
+    "aurelia-pal-nodejs": "^2.0.0",
+    "ts-jest": "^28.0.2",
+    "@types/jest": "^27.5.1"
+  },
+  "scripts": {
+    "build": "au build --env prod",
+    "start": "au run",
+    "test": "au test"
+  },
+  "engines": {
+    "node": ">=14.15.0"
+  },
+  "overrides": {
+    "chokidar": "^3.0.0",
+    "glob-stream": "^7.0.0",
+    "glob-parent": "^6.0.0",
+    "micromatch": "^4.0.0"
+  },
+  "jest": {
+    "testMatch": [
+      "<rootDir>/test/**/*.spec.ts"
+    ],
+    "moduleNameMapper": {
+      "^aurelia-binding$": "<rootDir>/node_modules/aurelia-binding",
+      "^.+\\.css$": "<rootDir>/test/mock-css"
+    },
+    "modulePaths": [
+      "<rootDir>/src",
+      "<rootDir>/node_modules"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json"
+    ],
+    "transform": {
+      "^.+\\.(css|less|sass|scss|styl|jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "jest-transform-stub",
+      "^.+\\.ts$": "ts-jest"
+    },
+    "setupFiles": [
+      "<rootDir>/test/jest-pretest.ts"
+    ],
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,ts}",
+      "!**/*.spec.{js,ts}",
+      "!**/node_modules/**",
+      "!**/test/**"
+    ],
+    "coverageDirectory": "<rootDir>/test/coverage-jest",
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "html"
+    ]
+  }
+}
