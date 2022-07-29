@@ -1,28 +1,14 @@
-# `EncycloPvp`
+# EncycloPvp
 
-This project is bootstrapped by [aurelia-cli](https://github.com/aurelia/cli).
+Site: https://souchy.github.io/Encyclopvp/
 
-For more information, go to https://aurelia.io/docs/cli/cli-bundler
+Encyclopédie Dofus axée principalement sur le pvp 3v3.
 
-## Run dev app
+Une sorte de wiki communautaire pour documenter les faits et les metas et aider les nouveaux à apprendre.
 
-Run `au run`, then open `http://localhost:9000`
+---
 
-To open browser automatically, do `au run --open`.
-
-To change dev server port, do `au run --port 8888`.
-
-To change dev server host, do `au run --host 127.0.0.1`
-
-
-**PS:** You could mix all the flags as well, `au run --host 127.0.0.1 --port 7070 --open`
-
-## Build for production
-
-Run `au build --env prod`.
-
-## Unit tests
-
-Run `au test` (or `au jest`).
-
-To run in watch mode, `au test --watch` or `au jest --watch`.
+Pour aider/modifier: 
+- Soit créer une requête dans https://github.com/Souchy/Encyclopvp/issues
+- Soit créer un pull request avec vos modifications 
+  - le site est fait avec Aurelia, voir [README Aurelia](./README%20aurelia.md) et https://aurelia.io
