@@ -6,6 +6,13 @@ export class App {
   public configureRouter(config: RouterConfiguration, router: Router): Promise<void> | PromiseLike<void> | void {
     config.title = 'Aurelia';
     config.map([
+		// {
+		//   route: ['', 'breeds'],
+		//   name: 'breeds',
+		//   moduleId: './pages/breeds',
+		//   nav: true,
+		//   title: 'Classes'
+		// },
       {
         route: ['', 'welcome'],
         name: 'welcome',
