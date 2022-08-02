@@ -1,5 +1,5 @@
-import jsonBreeds from '../DofusScraper/data/static/classes.json';
+// import jsonBreeds from '../DofusScraper/data/static/classes.json';
 
 export class Sidebar {
-	public breeds = jsonBreeds;
+	// public breeds = jsonBreeds;
 }
