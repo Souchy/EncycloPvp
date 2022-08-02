@@ -3,10 +3,22 @@
   <require from="@fortawesome/fontawesome-free/css/all.min.css"></require>
   <require from="./styles.css"></require>
   <require from="./nav-bar.html"></require>
+  <require from="./components/sidebar"></require>
+
+
 
   <nav-bar router.bind="router"></nav-bar>
 
-  <div class="page-host">
-    <router-view></router-view>
+
+  <div class="main">
+	<sidebar></sidebar>
+  
+	<div class="b-example-divider">
+	</div>
+
+	<div class="page-host">
+	  <router-view></router-view>
+	</div>
   </div>
+
 </template>

@@ -7,7 +7,7 @@ export class App {
     config.title = 'Aurelia';
     config.map([
 		// {
-		//   route: ['', 'breeds'],
+		//   route: ['breeds'],
 		//   name: 'breeds',
 		//   moduleId: './pages/breeds',
 		//   nav: true,
