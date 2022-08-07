@@ -10,7 +10,7 @@
 	</button>
 	<div class="collapse show" id="home-collapse" style="">
 		<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-			<li repeat.for="br of breeds"  style="list-style: none;">
+			<li repeat.for="br of breeds" style="list-style: none;">
 				<a href="/${br}" class="link-dark rounded">${br}</a>
 			</li>
 			<!-- <li><a href="#" class="link-dark rounded">Updates</a></li> -->
@@ -19,27 +19,46 @@
 	</div>
 
 	<!-- <img src="src/DofusDB/scraped/big.png"> -->
-	
+
 	<!-- <ul> -->
-		<!-- <li repeat.for="i of breeds.length" style="list-style: none; height: 54px; width: 54px;"> -->
-			<!-- <div repeat.for="i of breeds.length" style="height: 54px !important; width: 54px;"> -->
-				<!--  href="/${breeds[i]}"  -->
-				<!-- repeat.for="i of breeds.length" -->
-			<a repeat.for="i of breeds.length"
-				href="/${breeds[i]}" 
-				css="height: 54px; width: 54px; margin:2px; 
-				background: transparent url(src/DofusDB/scraped/big.png) 0 0 no-repeat; background-position: -56px ${-2 - 54 * i}px;"
-				>
-			</a>
+	<!-- <li repeat.for="i of breeds.length" style="list-style: none; height: 54px; width: 54px;"> -->
+	<!-- <div repeat.for="i of breeds.length" style="height: 54px !important; width: 54px;"> -->
+	<!--  href="/${breeds[i]}"  -->
+	<!-- repeat.for="i of breeds.length" -->
+	<div class="d-flex p-2 flex-wrap">
+		<a repeat.for="i of breeds.length" href="/${breeds[i]}"
+			css="height: 54px; width: 54px; 
+			margin-bottom: 5px;
+			margin-left: 2px;
+			margin-right: 3px;
+			box-sizing: border-box;
+			background: transparent url(src/DofusDB/scraped/big.png) 0 0 no-repeat; background-position: -56px ${-57 * i}px;">
+		</a>
+	</div>
 
 
-		<!-- </div> -->
-		<!-- </li> -->
+	<!-- </div> -->
+	<!-- </li> -->
 	<!-- </ul> -->
 
-	<div> 
+	<div class="container">
+		<div class="row">
+			<div class="col-sm">
+				One of three columns
+			</div>
+			<div class="col-sm">
+				One of three columns
+			</div>
+			<div class="col-sm">
+				One of three columns
+			</div>
+		</div>
+	</div>
+
+
+	<div>
 		<!-- class="ak-panel-content"> -->
-<!-- 	  
+		<!-- 	  
 	  <a href="/fr/mmorpg/encyclopedie/classes/6-piece-ecaflip" class="ak-breed-icon ak-breed-icon-big breed6_0" data-hasqtip="50"></a>
 	  <div class="ak-tooltip hidden" style="display: none;">La pièce d'Ecaflip</div>
 	  <a href="/fr/mmorpg/encyclopedie/classes/7-mains-eniripsa" class="ak-breed-icon ak-breed-icon-big breed7_0" data-hasqtip="51"></a>
