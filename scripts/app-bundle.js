@@ -146,7 +146,7 @@ exports.App = App;
 
 });
 ;
-define('text!app.html',[],function(){return "<template>\n  <require from=\"bootstrap/dist/css/bootstrap.min.css\"></require>\n  <require from=\"@fortawesome/fontawesome-free/css/all.min.css\"></require>\n  <require from=\"./styles.css\"></require>\n  <require from=\"./nav-bar.html\"></require>\n  <require from=\"./components/sidebar\"></require>\n\n\n\n  <!-- <nav-bar router.bind=\"router\"></nav-bar> -->\n\n\n  <div class=\"main\">\n\t<sidebar></sidebar>\n  \n\t<div class=\"b-example-divider\">\n\t</div>\n\n\t<div class=\"page-host\">\n\t  <router-view></router-view>\n\t</div>\n  </div>\n\n</template>\n";});;
+define('text!app.html',[],function(){return "<template>\n  <require from=\"bootstrap/dist/css/bootstrap.min.css\"></require>\n  <require from=\"@fortawesome/fontawesome-free/css/all.min.css\"></require>\n  <require from=\"./styles.css\"></require>\n  <!-- <require from=\"./nav-bar.html\"></require> -->\n  <require from=\"./components/sidebar\"></require>\n\n\n\n  <!-- <nav-bar router.bind=\"router\"></nav-bar> -->\n\n\n  <div class=\"main\">\n\t<sidebar></sidebar>\n  \n\t<div class=\"b-example-divider\">\n\t</div>\n\n\t<div class=\"page-host\">\n\t  <router-view></router-view>\n\t</div>\n  </div>\n\n</template>\n";});;
 define('blur-image',['require','exports','module','tslib','aurelia-framework'],function (require, exports, module) {"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BlurImageCustomAttribute = void 0;
@@ -411,46 +411,6 @@ function drawBlur(canvas, image) {
 
 });
 ;
-define('child-router',['require','exports','module'],function (require, exports, module) {"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.ChildRouter = void 0;
-var ChildRouter = (function () {
-    function ChildRouter() {
-        this.heading = 'Child Router';
-    }
-    ChildRouter.prototype.configureRouter = function (config, router) {
-        config.map([
-            {
-                route: ['', 'welcome'],
-                name: 'welcome',
-                moduleId: './welcome',
-                nav: true,
-                title: 'Welcome'
-            },
-            {
-                route: 'users',
-                name: 'users',
-                moduleId: './users',
-                nav: true,
-                title: 'Github Users'
-            },
-            {
-                route: 'child-router',
-                name: 'child-router',
-                moduleId: './child-router',
-                nav: true,
-                title: 'Child Router'
-            }
-        ]);
-        this.router = router;
-    };
-    return ChildRouter;
-}());
-exports.ChildRouter = ChildRouter;
-
-});
-;
-define('text!child-router.html',[],function(){return "<template>\r\n  <section class=\"au-animate\">\r\n    <h2>${heading}</h2>\r\n    <div class=\"container-fluid card pt-3\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-2\">\r\n          <div class=\"card\">\r\n            <div class=\"list-group list-group-flush\">\r\n              <a\r\n                repeat.for=\"row of router.navigation\"\r\n                class=\"list-group-item list-group-item-action ${row.isActive ? 'active' : ''}\"\r\n                href.bind=\"row.href\">${row.title}</a>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-md-10\">\r\n          <router-view></router-view>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </section>\r\n</template>\r\n";});;
 define('components/sidebar',['require','exports','module','tslib','../DofusDB/static/classes.json','aurelia-dependency-injection','aurelia-router'],function (require, exports, module) {"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sidebar = void 0;
@@ -521,7 +481,6 @@ exports.configure = configure;
 
 });
 ;
-define('text!nav-bar.html',[],function(){return "<template bindable=\"router\">\r\n  <nav class=\"navbar navbar-expand-lg fixed-top navbar-dark bg-dark\" role=\"navigation\">\r\n    <a class=\"navbar-brand\" href=\"#\">\r\n      <i class=\"fas fa-home\"></i>\r\n      <span>${router.title}</span>\r\n    </a>\r\n\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navigation-navbar-collapse-1\" aria-controls=\"navigation-navbar-collapse-1\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n      <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n\r\n    <div class=\"collapse navbar-collapse\" id=\"navigation-navbar-collapse-1\">\r\n      <ul class=\"navbar-nav mr-auto\">\r\n        <li repeat.for=\"row of router.navigation\" class=\"nav-item ${row.isActive ? 'active' : ''}\">\r\n          <a class=\"nav-link\" href.bind=\"row.href\">${row.title}</a>\r\n        </li>\r\n      </ul>\r\n\r\n      <ul class=\"navbar-nav\">\r\n        <li class=\"nav-item\" if.bind=\"router.isNavigating & debounce\">\r\n          <i class=\"fas fa-circle-notch fa-spin text-white fa-2x\"></i>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </nav>\r\n</template>\r\n";});;
 define('pages/breed',['require','exports','module','tslib','../DofusDB/static/classes.json','../DofusDB/scraped/spells.json','aurelia-dependency-injection','aurelia-router','aurelia-router','DofusDB/static/db','../details.json'],function (require, exports, module) {"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Breed = void 0;
@@ -643,99 +602,5 @@ exports.configure = configure;
 });
 ;
 define('text!styles.css',[],function(){return "body {\n  margin: 0;\n}\n.main {\n  display: flex;\n  width: 100%;\n  align-items: stretch;\n}\nsidebar {\n  width: 225px;\n  overflow: auto;\n  top: 0;\n  bottom: 0;\n}\n.page-host {\n  overflow-x: hidden;\n  overflow-y: auto;\n  width: 100%;\n  margin-left: 10%;\n  margin-right: 10%;\n  padding: 16px;\n}\n@media print {\n  .page-host {\n    position: absolute;\n    left: 10px;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    overflow-y: inherit;\n    overflow-x: inherit;\n  }\n}\nsection {\n  margin: 1rem;\n}\n.navbar-nav li.loader {\n  margin: 12px 24px 0 6px;\n}\n/* animate page transitions */\nsection.au-enter-active {\n  -webkit-animation: fadeInRight 1s;\n  animation: fadeInRight 1s;\n}\ndiv.au-stagger {\n  /* 50ms will be applied between each successive enter operation */\n  -webkit-animation-delay: 50ms;\n  animation-delay: 50ms;\n}\n/* animation definitions */\n@-webkit-keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none;\n  }\n}\n@keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    -ms-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    -ms-transform: none;\n    transform: none;\n  }\n}\n@-webkit-keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n";});;
-define('users',['require','exports','module','tslib','aurelia-framework','aurelia-fetch-client'],function (require, exports, module) {"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Users = void 0;
-var tslib_1 = require("tslib");
-var aurelia_framework_1 = require("aurelia-framework");
-var aurelia_fetch_client_1 = require("aurelia-fetch-client");
-var Users = (function () {
-    function Users(http) {
-        this.http = http;
-        this.heading = 'Github Users';
-        this.users = [];
-        http.configure(function (config) {
-            config
-                .useStandardConfiguration()
-                .withBaseUrl('https://api.github.com/');
-        });
-    }
-    Users.prototype.activate = function () {
-        return tslib_1.__awaiter(this, void 0, void 0, function () {
-            var response, _a;
-            return tslib_1.__generator(this, function (_b) {
-                switch (_b.label) {
-                    case 0: return [4, this.http.fetch('users')];
-                    case 1:
-                        response = _b.sent();
-                        _a = this;
-                        return [4, response.json()];
-                    case 2:
-                        _a.users = _b.sent();
-                        return [2];
-                }
-            });
-        });
-    };
-    Users = tslib_1.__decorate([
-        aurelia_framework_1.autoinject,
-        tslib_1.__metadata("design:paramtypes", [aurelia_fetch_client_1.HttpClient])
-    ], Users);
-    return Users;
-}());
-exports.Users = Users;
-
-});
-;
-define('text!users.html',[],function(){return "<template>\r\n  <require from=\"./blur-image\"></require>\r\n\r\n  <section class=\"au-animate\">\r\n      <h2>${heading}</h2>\r\n      <div class=\"row au-stagger\">\r\n        <div class=\"col-sm-6 col-md-3 user-card-container au-animate\" repeat.for=\"user of users\">\r\n            <div class=\"user-card\">\r\n                <canvas class=\"header-bg\" width=\"250\" height=\"70\" blur-image.bind=\"image\"></canvas>\r\n                <div class=\"avatar\">\r\n                    <img src.bind=\"user.avatar_url\" crossorigin ref=\"image\"/>\r\n                </div>\r\n                <div class=\"content\">\r\n                    <p class=\"name\">${user.login}</p>\r\n                    <p><a target=\"_blank\" class=\"btn btn-default\" href.bind=\"user.html_url\">Contact</a></p>\r\n                </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n  </section>\r\n</template>\r\n";});;
-define('welcome',['require','exports','module','tslib','aurelia-framework'],function (require, exports, module) {"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.UpperValueConverter = exports.Welcome = void 0;
-var tslib_1 = require("tslib");
-var aurelia_framework_1 = require("aurelia-framework");
-var Welcome = (function () {
-    function Welcome() {
-        this.heading = 'Welcome to the Aurelia Navigation App!';
-        this.firstName = 'John';
-        this.lastName = 'Doe';
-        this.previousValue = this.fullName;
-    }
-    Object.defineProperty(Welcome.prototype, "fullName", {
-        get: function () {
-            return "".concat(this.firstName, " ").concat(this.lastName);
-        },
-        enumerable: false,
-        configurable: true
-    });
-    Welcome.prototype.submit = function () {
-        this.previousValue = this.fullName;
-        alert("Welcome, ".concat(this.fullName, "!"));
-    };
-    Welcome.prototype.canDeactivate = function () {
-        if (this.fullName !== this.previousValue) {
-            return confirm('Are you sure you want to leave?');
-        }
-    };
-    tslib_1.__decorate([
-        (0, aurelia_framework_1.computedFrom)('firstName', 'lastName'),
-        tslib_1.__metadata("design:type", String),
-        tslib_1.__metadata("design:paramtypes", [])
-    ], Welcome.prototype, "fullName", null);
-    return Welcome;
-}());
-exports.Welcome = Welcome;
-var UpperValueConverter = (function () {
-    function UpperValueConverter() {
-    }
-    UpperValueConverter.prototype.toView = function (value) {
-        return value && value.toUpperCase();
-    };
-    return UpperValueConverter;
-}());
-exports.UpperValueConverter = UpperValueConverter;
-
-});
-;
-define('text!welcome.html',[],function(){return "<template>\r\n  <section class=\"au-animate\">\r\n    <h2>${heading}</h2>\r\n    <form role=\"form\" submit.delegate=\"submit()\">\r\n      <div class=\"form-group\">\r\n        <label for=\"fn\">First Name</label>\r\n        <input type=\"text\" value.bind=\"firstName\" class=\"form-control\" id=\"fn\" placeholder=\"first name\">\r\n      </div>\r\n      <div class=\"form-group\">\r\n        <label for=\"ln\">Last Name</label>\r\n        <input type=\"text\" value.bind=\"lastName\" class=\"form-control\" id=\"ln\" placeholder=\"last name\">\r\n      </div>\r\n      <div class=\"form-group\">\r\n        <label>Full Name</label>\r\n        <p class=\"help-block\">${fullName | upper}</p>\r\n      </div>\r\n      <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n    </form>\r\n  </section>\r\n</template>\r\n";});;
 define('resources',['resources/index'],function(m){return m;});
 //# sourceMappingURL=app-bundle.js.map
