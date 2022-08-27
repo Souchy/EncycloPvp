@@ -14,17 +14,104 @@ define('text!DofusDB/scraped/spells.json',[],function(){return "{\r\n\t\"feca\":
 define('DofusDB/scraped/spells.json',['text!DofusDB/scraped/spells.json'],function(m){return JSON.parse(m);});
 define('json!DofusDB/scraped/spells.json',['DofusDB/scraped/spells.json'],function(m){return m;});
 ;
-define('text!DofusDB/static/classes.json',[],function(){return "{\n  \"names\": [\n\t\"feca\",\n    \"sadida\",\n    \"sacrieur\",\n    \"pandawa\",\n    \"roublard\",\n    \"zobal\",\n    \"steamer\",\n    \"osamodas\",\n    \"enutrof\",\n    \"ecaflip\",\n    \"eniripsa\",\n    \"iop\",\n    \"cra\",\n    \"sram\",\n    \"xelor\",\n    \"eliotrope\",\n    \"huppermage\",\n    \"ouginak\"\n  ],\n  \"ids\": {\n    \"ecaflip\": 6,\n    \"eniripsa\": 7,\n    \"iop\": 8,\n    \"cra\": 9,\n    \"feca\": 1,\n    \"sacrieur\": 11,\n    \"sadida\": 10,\n    \"osamodas\": 2,\n    \"enutrof\": 3,\n    \"sram\": 4,\n    \"xelor\": 5,\n    \"pandawa\": 12,\n    \"roublard\": 13,\n    \"zobal\": 14,\n    \"steamer\": 15,\n    \"eliotrope\": 16,\n    \"huppermage\": 17,\n    \"ouginak\": 18\n  },\n  \"ordered\": [\n    \"feca\",\n    \"osamodas\",\n    \"enutrof\",\n    \"sram\",\n    \"xelor\",\n    \"ecaflip\",\n    \"eniripsa\",\n    \"iop\",\n    \"cra\",\n    \"sadida\",\n    \"sacrieur\",\n    \"pandawa\",\n    \"roublard\",\n    \"zobal\",\n    \"steamer\",\n    \"eliotrope\",\n    \"huppermage\",\n    \"ouginak\"\n  ]\n}\n";});
+define('text!DofusDB/static/classes.json',[],function(){return "{\r\n\t\"orderOnDofus\": [\r\n\t\t\"ecaflip\",\r\n\t\t\"eniripsa\",\r\n\t\t\"iop\",\r\n\t\t\"cra\",\r\n\t\t\"feca\",\r\n\t\t\"sacrieur\",\r\n\t\t\"sadida\",\r\n\t\t\"osamodas\",\r\n\t\t\"enutrof\",\r\n\t\t\"sram\",\r\n\t\t\"xelor\",\r\n\t\t\"pandawa\",\r\n\t\t\"roublard\",\r\n\t\t\"zobal\",\r\n\t\t\"steamer\",\r\n\t\t\"eliotrope\",\r\n\t\t\"huppermage\",\r\n\t\t\"ouginak\"\r\n\t],\r\n\t\"orderByIcon\": [\r\n\t\t\"feca\",\r\n\t\t\"sadida\",\r\n\t\t\"sacrieur\",\r\n\t\t\"pandawa\",\r\n\t\t\"roublard\",\r\n\t\t\"zobal\",\r\n\t\t\"steamer\",\r\n\t\t\"osamodas\",\r\n\t\t\"enutrof\",\r\n\t\t\"sram\",\r\n\t\t\"xelor\",\r\n\t\t\"ecaflip\",\r\n\t\t\"eniripsa\",\r\n\t\t\"iop\",\r\n\t\t\"cra\",\r\n\t\t\"eliotrope\",\r\n\t\t\"huppermage\",\r\n\t\t\"ouginak\"\r\n\t],\r\n\t\"orderById\": [\r\n\t\t\"feca\",\r\n\t\t\"osamodas\",\r\n\t\t\"enutrof\",\r\n\t\t\"sram\",\r\n\t\t\"xelor\",\r\n\t\t\"ecaflip\",\r\n\t\t\"eniripsa\",\r\n\t\t\"iop\",\r\n\t\t\"cra\",\r\n\t\t\"sadida\",\r\n\t\t\"sacrieur\",\r\n\t\t\"pandawa\",\r\n\t\t\"roublard\",\r\n\t\t\"zobal\",\r\n\t\t\"steamer\",\r\n\t\t\"eliotrope\",\r\n\t\t\"huppermage\",\r\n\t\t\"ouginak\"\r\n\t],\r\n\t\"ids\": {\r\n\t\t\"feca\": 1,\r\n\t\t\"osamodas\": 2,\r\n\t\t\"enutrof\": 3,\r\n\t\t\"sram\": 4,\r\n\t\t\"xelor\": 5,\r\n\t\t\"ecaflip\": 6,\r\n\t\t\"eniripsa\": 7,\r\n\t\t\"iop\": 8,\r\n\t\t\"cra\": 9,\r\n\t\t\"sadida\": 10,\r\n\t\t\"sacrieur\": 11,\r\n\t\t\"pandawa\": 12,\r\n\t\t\"roublard\": 13,\r\n\t\t\"zobal\": 14,\r\n\t\t\"steamer\": 15,\r\n\t\t\"eliotrope\": 16,\r\n\t\t\"huppermage\": 17,\r\n\t\t\"ouginak\": 18\r\n\t},\r\n\t\"french\": [\r\n\t\t\"Féca\",\r\n\t\t\"Osamodas\",\r\n\t\t\"Enutrof\",\r\n\t\t\"Sram\",\r\n\t\t\"Xélor\",\r\n\t\t\"Ecaflip\",\r\n\t\t\"Eniripsa\",\r\n\t\t\"Iop\",\r\n\t\t\"Crâ\",\r\n\t\t\"Sadida\",\r\n\t\t\"Sacrieur\",\r\n\t\t\"Pandawa\",\r\n\t\t\"Roublard\",\r\n\t\t\"Zobal\",\r\n\t\t\"Steamer\",\r\n\t\t\"Éliotrope\",\r\n\t\t\"Huppermage\",\r\n\t\t\"Ouginak\"\r\n\t]\r\n}\r\n";});
 define('DofusDB/static/classes.json',['text!DofusDB/static/classes.json'],function(m){return JSON.parse(m);});
 define('json!DofusDB/static/classes.json',['DofusDB/static/classes.json'],function(m){return m;});
+;
+define('DofusDB/static/db',['require','exports','module'],function (require, exports, module) {"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.db = void 0;
+var db = (function () {
+    function db() {
+    }
+    db.insertEntityIcon = function (mod) {
+        mod = mod.replace("{enemy}", "<img src='/src/DofusDB/scraped/enemy.png' />");
+        mod = mod.replace("{ally}", "<img src='/src/DofusDB/scraped/ally.png' />");
+        mod = mod.replace("{fighter}", "<img src='/src/DofusDB/scraped/fighter.png' />");
+        mod = mod.replace("{caster}", "<img src='/src/DofusDB/scraped/caster.png' />");
+        return mod;
+    };
+    db.getModIconStyle = function (mod) {
+        if (mod.toLowerCase().includes(" pa "))
+            return db.sprite(97, 243);
+        if (mod.toLowerCase().includes(" pm "))
+            return db.sprite(97, 52);
+        if (mod.toLowerCase().includes("portée"))
+            return db.sprite(97, 128);
+        if (mod.toLowerCase().includes("initiative"))
+            return db.sprite(97, 205);
+        if (mod.toLowerCase().includes("invocation"))
+            return db.sprite(97, 507);
+        if (mod.toLowerCase().includes("% critique"))
+            return db.sprite(97, 589);
+        if (mod.toLowerCase().includes("prospection"))
+            return db.sprite(97, 279);
+        if (mod.toLowerCase().includes("vie"))
+            return db.sprite(97, 919);
+        if (mod.toLowerCase().includes("vitalité"))
+            return db.sprite(97, 319);
+        if (mod.toLowerCase().includes("sagesse"))
+            return db.sprite(97, 358);
+        if (mod.toLowerCase().includes("neutre"))
+            return db.sprite(95, 15);
+        if (mod.toLowerCase().includes("force") || mod.toLowerCase().includes("terre"))
+            return db.sprite(97, 432);
+        if (mod.toLowerCase().includes("intelligence") || mod.toLowerCase().includes("feu"))
+            return db.sprite(97, 394);
+        if (mod.toLowerCase().includes("chance") || mod.toLowerCase().includes("eau"))
+            return db.sprite(97, 89);
+        if (mod.toLowerCase().includes("agilité") || mod.toLowerCase().includes("air"))
+            return db.sprite(97, 167);
+        if (mod == "Puissance")
+            return db.sprite(97, 1108);
+        if (mod.toLowerCase().includes("tacle"))
+            return db.sprite(97, 545);
+        if (mod.toLowerCase().includes("fuite"))
+            return db.sprite(97, 469);
+        if (mod.toLowerCase().includes("résistance poussée"))
+            return db.sprite(97, 832);
+        if (mod.toLowerCase().includes("résistance critique"))
+            return db.sprite(97, 1200);
+        if (mod.toLowerCase().includes("esquive pm"))
+            return db.sprite(97, 1016);
+        if (mod.toLowerCase().includes("esquive pa"))
+            return db.sprite(97, 1064);
+        if (mod.toLowerCase().includes("retrait pa"))
+            return db.sprite(97, 1340);
+        if (mod.toLowerCase().includes("retrait pm"))
+            return db.sprite(97, 1340);
+        if (mod.toLowerCase().includes("soin"))
+            return db.sprite(97, 966);
+        if (mod == "Dommages")
+            return db.sprite(97, 1156);
+        if (mod == "Dommages Poussée")
+            return db.sprite(97, 872);
+        if (mod == "Dommages Critiques")
+            return db.sprite(97, 1248);
+        if (mod == "Puissance aux pièges")
+            return db.sprite(97, 672);
+        if (mod == "Dommages aux pièges")
+            return db.sprite(97, 712);
+        return "";
+    };
+    db.sprite = function (x, y) {
+        return "vertical-align: middle; width: 22px; height: 22px; background-image: url('/src/DofusDB/scraped/icons.png'); background-position: -" + x + "px; background-position-y: -" + y + "px;";
+    };
+    return db;
+}());
+exports.db = db;
+
+});
 ;
 define('text!DofusDB/static/spellLevels.json',[],function(){return "[\r\n  3,\r\n  2,\r\n  3,\r\n  2,\r\n  3,\r\n  2,\r\n  3,\r\n  2,\r\n  3,\r\n  2,\r\n  3,\r\n  2,\r\n  3,\r\n  2,\r\n  3,\r\n  2,\r\n  3,\r\n  1,\r\n  3,\r\n  1,\r\n  3,\r\n  1,\r\n  3,\r\n  1,\r\n  3,\r\n  1,\r\n  3,\r\n  1,\r\n  3,\r\n  1,\r\n  3,\r\n  1,\r\n  3,\r\n  1,\r\n\r\n  2,\r\n  1,\r\n  2,\r\n  1,\r\n  2,\r\n  1,\r\n  2,\r\n  1,\r\n  2,\r\n  1\r\n]\r\n";});
 define('DofusDB/static/spellLevels.json',['text!DofusDB/static/spellLevels.json'],function(m){return JSON.parse(m);});
 define('json!DofusDB/static/spellLevels.json',['DofusDB/static/spellLevels.json'],function(m){return m;});
 ;
-define('app',['require','exports','module'],function (require, exports, module) {"use strict";
+define('app',['require','exports','module','tslib','./DofusDB/static/classes.json'],function (require, exports, module) {"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.App = void 0;
+var tslib_1 = require("tslib");
+var classes_json_1 = tslib_1.__importDefault(require("./DofusDB/static/classes.json"));
 var App = (function () {
     function App() {
     }
@@ -51,8 +138,27 @@ var App = (function () {
                 moduleId: './child-router',
                 nav: true,
                 title: 'Child Router'
+            },
+            {
+                route: 'breed',
+                name: 'breed',
+                moduleId: './pages/breed',
+                nav: true,
+                title: 'Github Breed'
             }
         ]);
+        for (var _i = 0, _a = classes_json_1.default.orderByIcon; _i < _a.length; _i++) {
+            var b = _a[_i];
+            config.map([
+                {
+                    route: "" + b,
+                    name: b,
+                    moduleId: './pages/breed',
+                    nav: false,
+                    title: '' + classes_json_1.default.french[classes_json_1.default.ids[b] - 1]
+                }
+            ]);
+        }
         this.router = router;
     };
     return App;
@@ -61,7 +167,7 @@ exports.App = App;
 
 });
 ;
-define('text!app.html',[],function(){return "<template>\n  <require from=\"bootstrap/dist/css/bootstrap.min.css\"></require>\n  <require from=\"@fortawesome/fontawesome-free/css/all.min.css\"></require>\n  <require from=\"./styles.css\"></require>\n  <require from=\"./nav-bar.html\"></require>\n  <require from=\"./components/sidebar\"></require>\n\n\n\n  <nav-bar router.bind=\"router\"></nav-bar>\n\n\n  <div class=\"main\">\n\t<sidebar></sidebar>\n  \n\t<div class=\"b-example-divider\">\n\t</div>\n\n\t<div class=\"page-host\">\n\t  <router-view></router-view>\n\t</div>\n  </div>\n\n</template>\n";});;
+define('text!app.html',[],function(){return "<template>\n  <require from=\"bootstrap/dist/css/bootstrap.min.css\"></require>\n  <require from=\"@fortawesome/fontawesome-free/css/all.min.css\"></require>\n  <require from=\"./styles.css\"></require>\n  <require from=\"./nav-bar.html\"></require>\n  <require from=\"./components/sidebar\"></require>\n\n\n\n  <!-- <nav-bar router.bind=\"router\"></nav-bar> -->\n\n\n  <div class=\"main\">\n\t<sidebar></sidebar>\n  \n\t<div class=\"b-example-divider\">\n\t</div>\n\n\t<div class=\"page-host\">\n\t  <router-view></router-view>\n\t</div>\n  </div>\n\n</template>\n";});;
 define('blur-image',['require','exports','module','tslib','aurelia-framework'],function (require, exports, module) {"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BlurImageCustomAttribute = void 0;
@@ -365,24 +471,37 @@ exports.ChildRouter = ChildRouter;
 
 });
 ;
-define('text!child-router.html',[],function(){return "<template>\n  <section class=\"au-animate\">\n    <h2>${heading}</h2>\n    <div class=\"container-fluid card pt-3\">\n      <div class=\"row\">\n        <div class=\"col-md-2\">\n          <div class=\"card\">\n            <div class=\"list-group list-group-flush\">\n              <a\n                repeat.for=\"row of router.navigation\"\n                class=\"list-group-item list-group-item-action ${row.isActive ? 'active' : ''}\"\n                href.bind=\"row.href\">${row.title}</a>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-10\">\n          <router-view></router-view>\n        </div>\n      </div>\n    </div>\n  </section>\n</template>\n";});;
-define('components/sidebar',['require','exports','module','tslib','../DofusDB/static/classes.json'],function (require, exports, module) {"use strict";
+define('text!child-router.html',[],function(){return "<template>\r\n  <section class=\"au-animate\">\r\n    <h2>${heading}</h2>\r\n    <div class=\"container-fluid card pt-3\">\r\n      <div class=\"row\">\r\n        <div class=\"col-md-2\">\r\n          <div class=\"card\">\r\n            <div class=\"list-group list-group-flush\">\r\n              <a\r\n                repeat.for=\"row of router.navigation\"\r\n                class=\"list-group-item list-group-item-action ${row.isActive ? 'active' : ''}\"\r\n                href.bind=\"row.href\">${row.title}</a>\r\n            </div>\r\n          </div>\r\n        </div>\r\n        <div class=\"col-md-10\">\r\n          <router-view></router-view>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </section>\r\n</template>\r\n";});;
+define('components/sidebar',['require','exports','module','tslib','../DofusDB/static/classes.json','aurelia-dependency-injection','aurelia-router'],function (require, exports, module) {"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.sidebar = void 0;
 var tslib_1 = require("tslib");
 var classes_json_1 = tslib_1.__importDefault(require("../DofusDB/static/classes.json"));
+var aurelia_dependency_injection_1 = require("aurelia-dependency-injection");
+var aurelia_router_1 = require("aurelia-router");
 var sidebar = (function () {
-    function sidebar() {
+    function sidebar(router) {
         this.name = "robyn";
-        this.breeds = classes_json_1.default.names;
+        this.router = router;
+        this.breeds = classes_json_1.default.orderByIcon;
+        console.log("sidebar breeds: " + this.breeds);
     }
+    sidebar = tslib_1.__decorate([
+        (0, aurelia_dependency_injection_1.inject)(aurelia_router_1.Router),
+        tslib_1.__metadata("design:paramtypes", [Object])
+    ], sidebar);
     return sidebar;
 }());
 exports.sidebar = sidebar;
 
 });
 ;
-define('text!components/sidebar.html',[],function(){return "<template class=\"d-flex flex-column flex-shrink-0 p-3 text-white bg-light\">\n\t<!-- <require from=\"../DofusDB/scraped/big.png\"></require> -->\n\n\n\t<p>Hello ${name}</p>\n\n\t<button class=\"btn btn-toggle align-items-center rounded collapsed\" data-bs-toggle=\"collapse\"\n\t\tdata-bs-target=\"#home-collapse\" aria-expanded=\"true\">\n\t\tClasses\n\t</button>\n\t<div class=\"collapse show\" id=\"home-collapse\" style=\"\">\n\t\t<ul class=\"btn-toggle-nav list-unstyled fw-normal pb-1 small\">\n\t\t\t<li repeat.for=\"br of breeds\" style=\"list-style: none;\">\n\t\t\t\t<a href=\"/${br}\" class=\"link-dark rounded\">${br}</a>\n\t\t\t</li>\n\t\t\t<!-- <li><a href=\"#\" class=\"link-dark rounded\">Updates</a></li> -->\n\t\t\t<!-- <li><a href=\"#\" class=\"link-dark rounded\">Reports</a></li> -->\n\t\t</ul>\n\t</div>\n\n\t<!-- <img src=\"src/DofusDB/scraped/big.png\"> -->\n\n\t<!-- <ul> -->\n\t<!-- <li repeat.for=\"i of breeds.length\" style=\"list-style: none; height: 54px; width: 54px;\"> -->\n\t<!-- <div repeat.for=\"i of breeds.length\" style=\"height: 54px !important; width: 54px;\"> -->\n\t<!--  href=\"/${breeds[i]}\"  -->\n\t<!-- repeat.for=\"i of breeds.length\" -->\n\t<div class=\"d-flex p-2 flex-wrap\">\n\t\t<a repeat.for=\"i of breeds.length\" href=\"/${breeds[i]}\"\n\t\t\tcss=\"height: 54px; width: 54px; \n\t\t\tmargin-bottom: 5px;\n\t\t\tmargin-left: 2px;\n\t\t\tmargin-right: 3px;\n\t\t\tbox-sizing: border-box;\n\t\t\tbackground: transparent url(src/DofusDB/scraped/big.png) 0 0 no-repeat; background-position: -56px ${-57 * i}px;\">\n\t\t</a>\n\t</div>\n\n\n\t<!-- </div> -->\n\t<!-- </li> -->\n\t<!-- </ul> -->\n\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-sm\">\n\t\t\t\tOne of three columns\n\t\t\t</div>\n\t\t\t<div class=\"col-sm\">\n\t\t\t\tOne of three columns\n\t\t\t</div>\n\t\t\t<div class=\"col-sm\">\n\t\t\t\tOne of three columns\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\n\t<div>\n\t\t<!-- class=\"ak-panel-content\"> -->\n\t\t<!-- \t  \n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/6-piece-ecaflip\" class=\"ak-breed-icon ak-breed-icon-big breed6_0\" data-hasqtip=\"50\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La pièce d'Ecaflip</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/7-mains-eniripsa\" class=\"ak-breed-icon ak-breed-icon-big breed7_0\" data-hasqtip=\"51\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Les mains d'Eniripsa</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/8-coeur-iop\" class=\"ak-breed-icon ak-breed-icon-big breed8_0\" data-hasqtip=\"52\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le cœur d'Iop</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/9-etendue-cra\" class=\"ak-breed-icon ak-breed-icon-big breed9_0\" data-hasqtip=\"53\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">L'étendue de Crâ</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/1-bouclier-feca\" class=\"ak-breed-icon ak-breed-icon-big breed1_0\" data-hasqtip=\"54\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le bouclier Féca</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/11-sang-sacrieur\" class=\"ak-breed-icon ak-breed-icon-big breed11_0\" data-hasqtip=\"55\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le sang de Sacrieur</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/10-soulier-sadida\" class=\"ak-breed-icon ak-breed-icon-big breed10_0\" data-hasqtip=\"56\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le soulier de Sadida</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/2-fouet-osamodas\" class=\"ak-breed-icon ak-breed-icon-big breed2_0\" data-hasqtip=\"57\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le fouet d'Osamodas</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/3-doigts-enutrof\" class=\"ak-breed-icon ak-breed-icon-big breed3_0\" data-hasqtip=\"58\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Les doigts d'Enutrof</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/4-ombre-sram\" class=\"ak-breed-icon ak-breed-icon-big breed4_0 on ak-selected\" data-hasqtip=\"59\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">L'ombre de Sram</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/5-sablier-xelor\" class=\"ak-breed-icon ak-breed-icon-big breed5_0\" data-hasqtip=\"60\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le sablier de Xélor</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/12-chopine-pandawa\" class=\"ak-breed-icon ak-breed-icon-big breed12_0\" data-hasqtip=\"61\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La chopine de Pandawa</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/13-ruse-roublard\" class=\"ak-breed-icon ak-breed-icon-big breed13_0\" data-hasqtip=\"62\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La ruse du Roublard</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/14-masque-zobal\" class=\"ak-breed-icon ak-breed-icon-big breed14_0\" data-hasqtip=\"63\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le masque du Zobal</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/15-vapeur-steamer\" class=\"ak-breed-icon ak-breed-icon-big breed15_0\" data-hasqtip=\"64\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La vapeur du Steamer</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/16-portail-eliotrope\" class=\"ak-breed-icon ak-breed-icon-big breed16_0\" data-hasqtip=\"65\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le portail Eliotrope</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/17-rune-huppermage\" class=\"ak-breed-icon ak-breed-icon-big breed17_0\" data-hasqtip=\"66\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La rune de l'Huppermage</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/18-rage-ouginak\" class=\"ak-breed-icon ak-breed-icon-big breed18_0\" data-hasqtip=\"67\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La rage d'Ouginak</div>\n\t -->\n\t</div>\n\n\t<!-- <ul>\n\t\t<li repeat.for=\"br of breeds\" style=\"list-style: none;\">\n\t\t\t<a>${br}</a>\n\t\t</li>\n\t</ul> -->\n\n</template>\n";});;
+define('text!components/sidebar.css',[],function(){return ".sidetoggle .collapsed .icon {\n  -webkit-transform: rotate(90deg);\n  -moz-transform: rotate(90deg);\n  -o-transform: rotate(90deg);\n  -ms-transform: rotate(90deg);\n  transform: rotate(90deg);\n  position: absolute;\n}\n.sidetoggle .icon {\n  -webkit-transform: rotate(180deg);\n  -moz-transform: rotate(180deg);\n  -o-transform: rotate(180deg);\n  -ms-transform: rotate(180deg);\n  transform: rotate(180deg);\n  position: absolute;\n}\n";});;
+define('text!components/sidebar.html',[],function(){return "<template class=\"d-flex flex-column flex-shrink-0 p-3\">\n\t<!-- bg-light -->\n\n\n\t<!-- <p>Hello ${name}</p> -->\n\n\t\n\t<!--\n\t<button class=\"btn btn-toggle align-items-center rounded collapsed\" data-bs-toggle=\"collapse\"\n\t\tdata-bs-target=\"#home-collapse\" aria-expanded=\"true\">\n\t\tClasses\n\t</button>\n\t<div class=\"collapse show\" id=\"home-collapse\" style=\"\">\n\t\t<ul class=\"btn-toggle-nav list-unstyled fw-normal pb-1 small\">\n\t\t\t<li repeat.for=\"br of breeds\" style=\"list-style: none;\">\n\t\t\t\t<a href=\"/${br}\" class=\"link-dark rounded\">${br}</a>\n\t\t\t</li>\n\t\t\t< !-- <li><a href=\"#\" class=\"link-dark rounded\">Updates</a></li> - ->\n\t\t\t< !-- <li><a href=\"#\" class=\"link-dark rounded\">Reports</a></li> - ->\n\t\t</ul>\n\t</div>\n\t-->\n\n\t<h4><a href=\"#\" style=\"color: inherit; text-decoration: inherit;\">Accueil</a></h4>\n\t\n\t<h4>Classes</h4>\n\t<div class=\"d-flex p-2 flex-wrap\">\n\t\t<a repeat.for=\"i of breeds.length\" href=\"#/${breeds[i]}\"\n\t\t\tcss=\"height: 54px; width: 54px; \n\t\t\tmargin-bottom: 5px;\n\t\t\tmargin-left: 2px;\n\t\t\tmargin-right: 3px;\n\t\t\tbox-sizing: border-box;\n\t\t\tbackground: transparent url(src/DofusDB/scraped/big.png) 0 0 no-repeat; background-position: -56px ${-57 * i}px;\">\n\t\t</a>\n\t</div>\n\n\t<h4>Mises à jour</h4>\n\t<div></div>\n\n\t<!-- </div> -->\n\t<!-- </li> -->\n\t<!-- </ul> -->\n\t<!--\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-sm\">\n\t\t\t\tOne of three columns\n\t\t\t</div>\n\t\t\t<div class=\"col-sm\">\n\t\t\t\tOne of three columns\n\t\t\t</div>\n\t\t\t<div class=\"col-sm\">\n\t\t\t\tOne of three columns\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t-->\n\n\n\t<!-- <div> -->\n\t\t<!-- class=\"ak-panel-content\"> -->\n\t\t<!-- \t  \n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/6-piece-ecaflip\" class=\"ak-breed-icon ak-breed-icon-big breed6_0\" data-hasqtip=\"50\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La pièce d'Ecaflip</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/7-mains-eniripsa\" class=\"ak-breed-icon ak-breed-icon-big breed7_0\" data-hasqtip=\"51\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Les mains d'Eniripsa</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/8-coeur-iop\" class=\"ak-breed-icon ak-breed-icon-big breed8_0\" data-hasqtip=\"52\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le cœur d'Iop</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/9-etendue-cra\" class=\"ak-breed-icon ak-breed-icon-big breed9_0\" data-hasqtip=\"53\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">L'étendue de Crâ</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/1-bouclier-feca\" class=\"ak-breed-icon ak-breed-icon-big breed1_0\" data-hasqtip=\"54\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le bouclier Féca</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/11-sang-sacrieur\" class=\"ak-breed-icon ak-breed-icon-big breed11_0\" data-hasqtip=\"55\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le sang de Sacrieur</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/10-soulier-sadida\" class=\"ak-breed-icon ak-breed-icon-big breed10_0\" data-hasqtip=\"56\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le soulier de Sadida</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/2-fouet-osamodas\" class=\"ak-breed-icon ak-breed-icon-big breed2_0\" data-hasqtip=\"57\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le fouet d'Osamodas</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/3-doigts-enutrof\" class=\"ak-breed-icon ak-breed-icon-big breed3_0\" data-hasqtip=\"58\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Les doigts d'Enutrof</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/4-ombre-sram\" class=\"ak-breed-icon ak-breed-icon-big breed4_0 on ak-selected\" data-hasqtip=\"59\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">L'ombre de Sram</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/5-sablier-xelor\" class=\"ak-breed-icon ak-breed-icon-big breed5_0\" data-hasqtip=\"60\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le sablier de Xélor</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/12-chopine-pandawa\" class=\"ak-breed-icon ak-breed-icon-big breed12_0\" data-hasqtip=\"61\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La chopine de Pandawa</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/13-ruse-roublard\" class=\"ak-breed-icon ak-breed-icon-big breed13_0\" data-hasqtip=\"62\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La ruse du Roublard</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/14-masque-zobal\" class=\"ak-breed-icon ak-breed-icon-big breed14_0\" data-hasqtip=\"63\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le masque du Zobal</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/15-vapeur-steamer\" class=\"ak-breed-icon ak-breed-icon-big breed15_0\" data-hasqtip=\"64\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La vapeur du Steamer</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/16-portail-eliotrope\" class=\"ak-breed-icon ak-breed-icon-big breed16_0\" data-hasqtip=\"65\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le portail Eliotrope</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/17-rune-huppermage\" class=\"ak-breed-icon ak-breed-icon-big breed17_0\" data-hasqtip=\"66\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La rune de l'Huppermage</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/18-rage-ouginak\" class=\"ak-breed-icon ak-breed-icon-big breed18_0\" data-hasqtip=\"67\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La rage d'Ouginak</div>\n\t -->\n\t<!-- </div> -->\n\n\t<!-- <ul>\n\t\t<li repeat.for=\"br of breeds\" style=\"list-style: none;\">\n\t\t\t<a>${br}</a>\n\t\t</li>\n\t</ul> -->\n\n</template>\n";});;
+define('text!details.json',[],function(){return "{\n\n\t\"12981\": {\n\t\t\"text\": [\n\t\t\t\"N'affecte pas le panda si lancé en étant porté.\"\n\t\t]\n\t},\n\t\"13009\": {\n\t\t\"text\": [\n\t\t\t\"Affecte le panda si lancé en étant porté.\"\n\t\t]\n\t},\n\t\"12987\": {\n\t\t\"effects\": [\n\t\t\t\"31 à 34 (dommages Terre) {enemy}\",\n\t\t\t\"-5 PA {fighter}\"\n\t\t]\n\t},\n\t\"12988\": {\n\t\t\"effects\": [\n\t\t\t\"21 à 22 (dommages Feu) {fighter}\",\n\t\t\t\"21 à 22 (dommages Eau) {fighter}\",\n\t\t\t\"21 à 22 (dommages Terre) {fighter}\",\n\t\t\t\"21 à 22 (dommages Air) {fighter}\"\n\t\t]\n\t},\n\t\"13019\": {\n\t\t\"effects\": [\n\t\t\t\"21 à 22 (dommages Feu) {enemy}\",\n\t\t\t\"21 à 22 (dommages Eau) {enemy}\",\n\t\t\t\"21 à 22 (dommages Terre) {enemy}\",\n\t\t\t\"21 à 22 (dommages Air) {enemy}\",\n\t\t\t\"État Pesanteur {enemy}\"\n\t\t]\n\t},\n\t\"12992\": {\n\t\t\"effects\": [\n\t\t\t\"Attire de 1 case(s) {enemy}\",\n\t\t\t\"32 à 34 (dommages Air) {enemy}\",\n\t\t\t\"Réduit les dommages finaux occasionnés de 20% {fighter}\"\n\t\t]\n\t},\n\n\n\t\"12787\": {\n\t\t\"text\": [\n\t\t\t\"6 po au lancé\"\n\t\t]\n\t},\n\t\"12810\": {\n\t\t\"text\": [\n\t\t\t\"4 po au lancé\"\n\t\t]\n\t}\n\n}\n";});
+define('details.json',['text!details.json'],function(m){return JSON.parse(m);});
+define('json!details.json',['details.json'],function(m){return m;});
+;
 define('environment',['require','exports','module'],function (require, exports, module) {"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = {
@@ -392,6 +511,7 @@ exports.default = {
 
 });
 ;
+define('text!home.html',[],function(){return "<template>\n\t<p>Bienvenue sur l'encyclopédie Dofus non-officielle.</p>\n\t<p></p>\n</template>\n";});;
 define('main',['require','exports','module','tslib','bootstrap','./environment'],function (require, exports, module) {"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.configure = void 0;
@@ -412,12 +532,102 @@ exports.configure = configure;
 
 });
 ;
-define('text!nav-bar.html',[],function(){return "<template bindable=\"router\">\n  <nav class=\"navbar navbar-expand-lg fixed-top navbar-dark bg-dark\" role=\"navigation\">\n    <a class=\"navbar-brand\" href=\"#\">\n      <i class=\"fas fa-home\"></i>\n      <span>${router.title}</span>\n    </a>\n\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navigation-navbar-collapse-1\" aria-controls=\"navigation-navbar-collapse-1\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n    </button>\n\n    <div class=\"collapse navbar-collapse\" id=\"navigation-navbar-collapse-1\">\n      <ul class=\"navbar-nav mr-auto\">\n        <li repeat.for=\"row of router.navigation\" class=\"nav-item ${row.isActive ? 'active' : ''}\">\n          <a class=\"nav-link\" href.bind=\"row.href\">${row.title}</a>\n        </li>\n      </ul>\n\n      <ul class=\"navbar-nav\">\n        <li class=\"nav-item\" if.bind=\"router.isNavigating & debounce\">\n          <i class=\"fas fa-circle-notch fa-spin text-white fa-2x\"></i>\n        </li>\n      </ul>\n    </div>\n  </nav>\n</template>\n";});;
+define('text!nav-bar.html',[],function(){return "<template bindable=\"router\">\r\n  <nav class=\"navbar navbar-expand-lg fixed-top navbar-dark bg-dark\" role=\"navigation\">\r\n    <a class=\"navbar-brand\" href=\"#\">\r\n      <i class=\"fas fa-home\"></i>\r\n      <span>${router.title}</span>\r\n    </a>\r\n\r\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navigation-navbar-collapse-1\" aria-controls=\"navigation-navbar-collapse-1\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\r\n      <span class=\"navbar-toggler-icon\"></span>\r\n    </button>\r\n\r\n    <div class=\"collapse navbar-collapse\" id=\"navigation-navbar-collapse-1\">\r\n      <ul class=\"navbar-nav mr-auto\">\r\n        <li repeat.for=\"row of router.navigation\" class=\"nav-item ${row.isActive ? 'active' : ''}\">\r\n          <a class=\"nav-link\" href.bind=\"row.href\">${row.title}</a>\r\n        </li>\r\n      </ul>\r\n\r\n      <ul class=\"navbar-nav\">\r\n        <li class=\"nav-item\" if.bind=\"router.isNavigating & debounce\">\r\n          <i class=\"fas fa-circle-notch fa-spin text-white fa-2x\"></i>\r\n        </li>\r\n      </ul>\r\n    </div>\r\n  </nav>\r\n</template>\r\n";});;
+define('pages/breed',['require','exports','module','tslib','../DofusDB/static/classes.json','../DofusDB/scraped/spells.json','aurelia-dependency-injection','aurelia-router','aurelia-router','DofusDB/static/db','../details.json'],function (require, exports, module) {"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Breed = void 0;
+var tslib_1 = require("tslib");
+var classes_json_1 = tslib_1.__importDefault(require("../DofusDB/static/classes.json"));
+var spells_json_1 = tslib_1.__importDefault(require("../DofusDB/scraped/spells.json"));
+var aurelia_dependency_injection_1 = require("aurelia-dependency-injection");
+var aurelia_router_1 = require("aurelia-router");
+var aurelia_router_2 = require("aurelia-router");
+var db_1 = require("DofusDB/static/db");
+var details_json_1 = tslib_1.__importDefault(require("../details.json"));
+var Breed = (function () {
+    function Breed(router) {
+        this.breed = "null";
+        this.selectedSpellNumber = 0;
+        this.router = router;
+    }
+    Breed.prototype.created = function (owningView, myView) {
+        console.log("breed created route : " + this.breed);
+        try {
+            this.breed = this.getRoute();
+        }
+        catch (err) {
+        }
+    };
+    Breed.prototype.getRoute = function () {
+        return this.router.currentInstruction.config.name;
+    };
+    Breed.prototype.determineActivationStrategy = function () {
+        return aurelia_router_2.activationStrategy.replace;
+    };
+    Breed.prototype.selectSpell = function (id) {
+        this.selectedSpellNumber = id;
+    };
+    Breed.prototype.getId = function () {
+        return classes_json_1.default.ids[this.breed];
+    };
+    Breed.prototype.getI18nName = function () {
+        return classes_json_1.default.french[this.getId() - 1];
+    };
+    Breed.prototype.getSpells = function () {
+        return spells_json_1.default[this.breed];
+    };
+    Breed.prototype.getSpell1 = function () {
+        return this.getSpells()[this.selectedSpellNumber];
+    };
+    Breed.prototype.getSpell = function (num) {
+        return this.getSpells()[num];
+    };
+    Breed.prototype.getSpellDescription = function () {
+        return this.getSpell1().description;
+    };
+    Breed.prototype.getSpellDescription2 = function (num) {
+        return this.getSpells()[num].description;
+    };
+    Breed.prototype.getIcon = function (val) {
+        if (val) {
+            return db_1.db.getModIconStyle(val);
+        }
+        return "";
+    };
+    Breed.prototype.getDetails = function (num) {
+        var detail = details_json_1.default[this.getSpell(num).id];
+        if (!detail) {
+            return "";
+        }
+        var str = "";
+        if (detail.text) {
+            for (var _i = 0, _a = detail.text; _i < _a.length; _i++) {
+                var s = _a[_i];
+                str += db_1.db.insertEntityIcon(s);
+                str += "<br/>";
+            }
+        }
+        if (detail.effects) {
+            for (var _b = 0, _c = detail.effects; _b < _c.length; _b++) {
+                var s = _c[_b];
+                str += db_1.db.insertEntityIcon(s);
+                str += "<br/>";
+            }
+        }
+        return str;
+    };
+    Breed = tslib_1.__decorate([
+        (0, aurelia_dependency_injection_1.inject)(aurelia_router_1.Router),
+        tslib_1.__metadata("design:paramtypes", [Object])
+    ], Breed);
+    return Breed;
+}());
+exports.Breed = Breed;
 
-
-define("pages/breed", function(){});
+});
 ;
-define('text!pages/breed.html',[],function(){return "";});;
+define('text!pages/breed.css',[],function(){return ".spellList {\n  max-width: 750px;\n  margin-left: auto;\n  margin-right: auto;\n}\n.spell {\n  opacity: 0.55;\n  padding: 5px;\n  cursor: pointer;\n}\n.spell:hover {\n  opacity: 1;\n}\n.spellactive {\n  opacity: 1;\n}\n.effectsNormal {\n  margin-right: auto;\n  width: 45%;\n}\n.effectsCrit {\n  margin-right: auto;\n  width: 45%;\n}\n";});;
+define('text!pages/breed.html',[],function(){return "<template>\n\t<require from=\"./breed.css\"></require>\n\t<!-- hello ${breedName} -->\n\n\n\t<h4>${getI18nName()}</h4>\n\n\t<div class=\"spellList d-flex flex-wrap\">\n\t\t<div class=\"spellGroup\" repeat.for=\"i of getSpells().length / 2\">\n\t\t\t<div class=\"spell ${selectedSpellNumber == i*2 ? 'spellactive' : ''}\" click.delegate=\"selectSpell(i*2)\">\n\t\t\t\t<!-- ${getSpells()[i*2]} -->\n\t\t\t\t<img src=\"src/DofusDB/scraped/spells/${getSpells()[i*2].id}.png\" title=\"${getSpells()[i*2].name}\" style=\"width: 55px; height: 55px;\"/>\n\t\t\t</div>\n\t\t\t<div class=\"spell ${selectedSpellNumber == i*2+1 ? 'spellactive' : ''}\" click.delegate=\"selectSpell(i*2+1)\">\n\t\t\t\t<!-- ${getSpells()[i*2+1]} -->\n\t\t\t\t<img src=\"src/DofusDB/scraped/spells/${getSpells()[i*2+1].id}.png\" title=\"${getSpells()[i*2+1].name}\" style=\"width: 55px; height: 55px;\"/>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\t\n\t<div class=\"spellDescription\"> \n\t\t<!-- name -->\n\t\t<h5>\n\t\t\t${getSpell(selectedSpellNumber).name}\n\t\t</h5>\n\t\t<span>${getSpell(selectedSpellNumber).po} / ${getSpell(selectedSpellNumber).pa}</span>\n\t\t<!-- description -->\n\t\t<p style=\"white-space: pre-line;\">${getSpell(selectedSpellNumber).description}</p>\n\t\t<!-- effects -->\n\t\t<div class=\"d-flex effects\">\n\t\t\t<!-- normal -->\n\t\t\t<div class=\"effectsNormal\">\n\t\t\t\t<h6>Effets</h6>\n\t\t\t\t<!-- <div class=\"d-flex justify-content-between effectLine\" repeat.for=\"e of getSpell(selectedSpellNumber).effects\">\n\t\t\t\t\t<div class=\"effectDescription\">${e.effect}</div>\n\t\t\t\t\t<div class=\"effectIcon\" style.bind=\"getIcon(e.effect)\"></div>\n\t\t\t\t\t< !-- <span>${e.val.includes('span ') ? getIcon(e.val) : e.val}</span> - ->\n\t\t\t\t</div> -->\n\n\t\t\t\t<table class=\"table table-striped table-sm table-borderless \">\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr repeat.for=\"e of getSpell(selectedSpellNumber).effects\">\n\t\t\t\t\t\t\t<td class=\"\">${e.effect}</td>\n\t\t\t\t\t\t\t<td class=\"\" style.bind=\"getIcon(e.effect)\"></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t\t<!-- crit -->\n\t\t\t<div class=\"effectsCrit\">\n\t\t\t\t<h6>Effets critiques</h6>\n\t\t\t\t<!-- <div class=\"d-flex justify-content-between effectLine\" repeat.for=\"e of getSpell(selectedSpellNumber).effectsCrit\">\n\t\t\t\t\t<div class=\"effectDescription\">${e.effect}</div>\n\t\t\t\t\t<div class=\"effectIcon\" style.bind=\"getIcon(e.effect)\"></div>\n\t\t\t\t\t< !-- <span>${e.val.includes('span ') ? getIcon(e.val) : e.val}</span> - ->\n\t\t\t\t</div> -->\n\t\t\t\t\n\t\t\t\t<table class=\"table table-striped table-sm table-borderless \">\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr repeat.for=\"e of getSpell(selectedSpellNumber).effectsCrit\">\n\t\t\t\t\t\t\t<td class=\"\">${e.effect}</td>\n\t\t\t\t\t\t\t<td class=\"\" style.bind=\"getIcon(e.effect)\"></td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\t\t\t<!-- -->\n\t\t</div>\n\t\t<!-- other -->\n\t\t<div>\n\t\t\t<h6>Autres caractéristiques</h6>\n\t\t\t<!-- <div repeat.for=\"e of getSpell(selectedSpellNumber).details\" class=\"d-flex justify-content-between\" style=\"max-width: 400px;\">\n\t\t\t\t<span>${e.effect}</span>\n\t\t\t\t<span>${e.val.includes('static') ? '' : e.val}</span>\n\t\t\t\t${e.info}\n\t\t\t</div> -->\n\n\t\t\t<div class=\"d-flex\" style=\"\">\n\t\t\t\t<table class=\"table table-striped table-sm table-borderless\"  style=\"width:45%; margin-right: auto;\">\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<!-- getSpell(selectedSpellNumber).details -->\n\t\t\t\t\t\t<!-- <tr repeat.for=\"e of getSpell(selectedSpellNumber).details\"> -->\n\t\t\t\t\t\t<tr repeat.for=\"i of 4\">\n\t\t\t\t\t\t\t<td class=\"\">\n\t\t\t\t\t\t\t\t${getSpell(selectedSpellNumber).details[i].effect} \n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td class=\"\" style=\"white-space: nowrap; text-align: right;\">${\n\t\t\t\t\t\t\t\tgetSpell(selectedSpellNumber).details[i].val.includes('static') ? \n\t\t\t\t\t\t\t\tgetSpell(selectedSpellNumber).details[i].info : \n\t\t\t\t\t\t\t\tgetSpell(selectedSpellNumber).details[i].val\n\t\t\t\t\t\t\t}</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t\t\n\t\t\t\t<table class=\"table table-striped table-sm table-borderless\"  style=\"width:45%; margin-right: auto; height: auto;\">\n\t\t\t\t\t<tbody>\n\t\t\t\t\t\t<tr repeat.for=\"i of getSpell(selectedSpellNumber).details.length - 4\" height=\"32px;\">\n\t\t\t\t\t\t\t<td class=\"\">\n\t\t\t\t\t\t\t\t${getSpell(selectedSpellNumber).details[i+4].effect} \n\t\t\t\t\t\t\t</td>\n\t\t\t\t\t\t\t<td class=\"\" style=\"text-align: right;\">${\n\t\t\t\t\t\t\t\tgetSpell(selectedSpellNumber).details[i+4].val.includes('static') ? \n\t\t\t\t\t\t\t\tgetSpell(selectedSpellNumber).details[i+4].info : \n\t\t\t\t\t\t\t\tgetSpell(selectedSpellNumber).details[i+4].val\n\t\t\t\t\t\t\t}</td>\n\t\t\t\t\t\t</tr>\n\t\t\t\t\t</tbody>\n\t\t\t\t</table>\n\t\t\t</div>\n\n\t\t</div> <!-- autre -->\n\n\t\t<!-- détails additionels -->\n\t\t<div>\n\t\t\t<h6>Détails additionnels</h6>\n\t\t\t<!-- <p style=\"white-space: pre-line;\">${getDetails(selectedSpellNumber)}</p> -->\n\t\t\t${getDetails(selectedSpellNumber)}\n\t\t\t<!-- <table>\n\t\t\t\t<tr repeat.for=\"e of details[getSpell(num).id].effects\">\n\t\t\t\t\t<td>\n\t\t\t\t\t\t${}\n\t\t\t\t\t</td>\n\t\t\t\t</tr>\n\t\t\t</table> -->\n\t\t</div>\n\n\t</div>\n\n</template>\n";});;
 
 
 define("pages/breeds", function(){});
@@ -453,7 +663,7 @@ exports.configure = configure;
 
 });
 ;
-define('text!styles.css',[],function(){return "body {\n  margin: 0;\n}\n.main {\n  margin-top: 56px;\n  display: flex;\n  width: 100%;\n  align-items: stretch;\n}\nsidebar {\n  width: 280px;\n  overflow: auto;\n  top: 0;\n  bottom: 0;\n}\n.page-host {\n  overflow-x: hidden;\n  overflow-y: auto;\n}\n@media print {\n  .page-host {\n    position: absolute;\n    left: 10px;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    overflow-y: inherit;\n    overflow-x: inherit;\n  }\n}\nsection {\n  margin: 1rem;\n}\n.navbar-nav li.loader {\n  margin: 12px 24px 0 6px;\n}\n.pictureDetail {\n  max-width: 425px;\n}\n/* animate page transitions */\nsection.au-enter-active {\n  -webkit-animation: fadeInRight 1s;\n  animation: fadeInRight 1s;\n}\ndiv.au-stagger {\n  /* 50ms will be applied between each successive enter operation */\n  -webkit-animation-delay: 50ms;\n  animation-delay: 50ms;\n}\n.user-card-container.au-enter {\n  opacity: 0;\n}\n.user-card-container.au-enter-active {\n  -webkit-animation: fadeIn 2s;\n  animation: fadeIn 2s;\n}\n.user-card {\n  overflow: hidden;\n  position: relative;\n  border: 1px solid #CCC;\n  border-radius: 8px;\n  text-align: center;\n  padding: 0;\n  background-color: #337ab7;\n  color: #88acd9;\n  margin-bottom: 32px;\n  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);\n}\n.user-card .content {\n  margin-top: 10px;\n}\n.user-card .content .name {\n  color: white;\n  text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);\n  font-size: 18px;\n}\n.user-card .header-bg {\n  /* This stretches the canvas across the entire hero unit */\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 70px;\n  border-bottom: 1px #FFF solid;\n  border-radius: 6px 6px 0 0;\n}\n.user-card .avatar {\n  position: relative;\n  margin-top: 15px;\n  z-index: 100;\n}\n.user-card .avatar img {\n  width: 100px;\n  height: 100px;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n  border: 2px #FFF solid;\n}\n/* animation definitions */\n@-webkit-keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none;\n  }\n}\n@keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    -ms-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    -ms-transform: none;\n    transform: none;\n  }\n}\n@-webkit-keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n";});;
+define('text!styles.css',[],function(){return "body {\n  margin: 0;\n}\n.main {\n  display: flex;\n  width: 100%;\n  align-items: stretch;\n}\nsidebar {\n  width: 225px;\n  overflow: auto;\n  top: 0;\n  bottom: 0;\n}\n.page-host {\n  overflow-x: hidden;\n  overflow-y: auto;\n  width: 100%;\n  margin-left: 10%;\n  margin-right: 10%;\n  padding: 16px;\n}\n@media print {\n  .page-host {\n    position: absolute;\n    left: 10px;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    overflow-y: inherit;\n    overflow-x: inherit;\n  }\n}\nsection {\n  margin: 1rem;\n}\n.navbar-nav li.loader {\n  margin: 12px 24px 0 6px;\n}\n.pictureDetail {\n  max-width: 425px;\n}\n/* animate page transitions */\nsection.au-enter-active {\n  -webkit-animation: fadeInRight 1s;\n  animation: fadeInRight 1s;\n}\ndiv.au-stagger {\n  /* 50ms will be applied between each successive enter operation */\n  -webkit-animation-delay: 50ms;\n  animation-delay: 50ms;\n}\n.user-card-container.au-enter {\n  opacity: 0;\n}\n.user-card-container.au-enter-active {\n  -webkit-animation: fadeIn 2s;\n  animation: fadeIn 2s;\n}\n.user-card {\n  overflow: hidden;\n  position: relative;\n  border: 1px solid #CCC;\n  border-radius: 8px;\n  text-align: center;\n  padding: 0;\n  background-color: #337ab7;\n  color: #88acd9;\n  margin-bottom: 32px;\n  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);\n}\n.user-card .content {\n  margin-top: 10px;\n}\n.user-card .content .name {\n  color: white;\n  text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);\n  font-size: 18px;\n}\n.user-card .header-bg {\n  /* This stretches the canvas across the entire hero unit */\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 70px;\n  border-bottom: 1px #FFF solid;\n  border-radius: 6px 6px 0 0;\n}\n.user-card .avatar {\n  position: relative;\n  margin-top: 15px;\n  z-index: 100;\n}\n.user-card .avatar img {\n  width: 100px;\n  height: 100px;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n  border: 2px #FFF solid;\n}\n/* animation definitions */\n@-webkit-keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none;\n  }\n}\n@keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    -ms-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    -ms-transform: none;\n    transform: none;\n  }\n}\n@-webkit-keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n";});;
 define('users',['require','exports','module','tslib','aurelia-framework','aurelia-fetch-client'],function (require, exports, module) {"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Users = void 0;
@@ -498,7 +708,7 @@ exports.Users = Users;
 
 });
 ;
-define('text!users.html',[],function(){return "<template>\n  <require from=\"./blur-image\"></require>\n\n  <section class=\"au-animate\">\n      <h2>${heading}</h2>\n      <div class=\"row au-stagger\">\n        <div class=\"col-sm-6 col-md-3 user-card-container au-animate\" repeat.for=\"user of users\">\n            <div class=\"user-card\">\n                <canvas class=\"header-bg\" width=\"250\" height=\"70\" blur-image.bind=\"image\"></canvas>\n                <div class=\"avatar\">\n                    <img src.bind=\"user.avatar_url\" crossorigin ref=\"image\"/>\n                </div>\n                <div class=\"content\">\n                    <p class=\"name\">${user.login}</p>\n                    <p><a target=\"_blank\" class=\"btn btn-default\" href.bind=\"user.html_url\">Contact</a></p>\n                </div>\n            </div>\n        </div>\n      </div>\n  </section>\n</template>\n";});;
+define('text!users.html',[],function(){return "<template>\r\n  <require from=\"./blur-image\"></require>\r\n\r\n  <section class=\"au-animate\">\r\n      <h2>${heading}</h2>\r\n      <div class=\"row au-stagger\">\r\n        <div class=\"col-sm-6 col-md-3 user-card-container au-animate\" repeat.for=\"user of users\">\r\n            <div class=\"user-card\">\r\n                <canvas class=\"header-bg\" width=\"250\" height=\"70\" blur-image.bind=\"image\"></canvas>\r\n                <div class=\"avatar\">\r\n                    <img src.bind=\"user.avatar_url\" crossorigin ref=\"image\"/>\r\n                </div>\r\n                <div class=\"content\">\r\n                    <p class=\"name\">${user.login}</p>\r\n                    <p><a target=\"_blank\" class=\"btn btn-default\" href.bind=\"user.html_url\">Contact</a></p>\r\n                </div>\r\n            </div>\r\n        </div>\r\n      </div>\r\n  </section>\r\n</template>\r\n";});;
 define('welcome',['require','exports','module','tslib','aurelia-framework'],function (require, exports, module) {"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.UpperValueConverter = exports.Welcome = void 0;
@@ -547,6 +757,6 @@ exports.UpperValueConverter = UpperValueConverter;
 
 });
 ;
-define('text!welcome.html',[],function(){return "<template>\n  <section class=\"au-animate\">\n    <h2>${heading}</h2>\n    <form role=\"form\" submit.delegate=\"submit()\">\n      <div class=\"form-group\">\n        <label for=\"fn\">First Name</label>\n        <input type=\"text\" value.bind=\"firstName\" class=\"form-control\" id=\"fn\" placeholder=\"first name\">\n      </div>\n      <div class=\"form-group\">\n        <label for=\"ln\">Last Name</label>\n        <input type=\"text\" value.bind=\"lastName\" class=\"form-control\" id=\"ln\" placeholder=\"last name\">\n      </div>\n      <div class=\"form-group\">\n        <label>Full Name</label>\n        <p class=\"help-block\">${fullName | upper}</p>\n      </div>\n      <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\n    </form>\n  </section>\n</template>\n";});;
+define('text!welcome.html',[],function(){return "<template>\r\n  <section class=\"au-animate\">\r\n    <h2>${heading}</h2>\r\n    <form role=\"form\" submit.delegate=\"submit()\">\r\n      <div class=\"form-group\">\r\n        <label for=\"fn\">First Name</label>\r\n        <input type=\"text\" value.bind=\"firstName\" class=\"form-control\" id=\"fn\" placeholder=\"first name\">\r\n      </div>\r\n      <div class=\"form-group\">\r\n        <label for=\"ln\">Last Name</label>\r\n        <input type=\"text\" value.bind=\"lastName\" class=\"form-control\" id=\"ln\" placeholder=\"last name\">\r\n      </div>\r\n      <div class=\"form-group\">\r\n        <label>Full Name</label>\r\n        <p class=\"help-block\">${fullName | upper}</p>\r\n      </div>\r\n      <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n    </form>\r\n  </section>\r\n</template>\r\n";});;
 define('resources',['resources/index'],function(m){return m;});
 //# sourceMappingURL=app-bundle.js.map

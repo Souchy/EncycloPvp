@@ -1,9 +1,11 @@
-<template class="d-flex flex-column flex-shrink-0 p-3 text-white bg-light">
-	<!-- <require from="../DofusDB/scraped/big.png"></require> -->
+<template class="d-flex flex-column flex-shrink-0 p-3">
+	<!-- bg-light -->
 
 
-	<p>Hello ${name}</p>
+	<!-- <p>Hello ${name}</p> -->
 
+	
+	<!--
 	<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
 		data-bs-target="#home-collapse" aria-expanded="true">
 		Classes
@@ -13,20 +15,17 @@
 			<li repeat.for="br of breeds" style="list-style: none;">
 				<a href="/${br}" class="link-dark rounded">${br}</a>
 			</li>
-			<!-- <li><a href="#" class="link-dark rounded">Updates</a></li> -->
-			<!-- <li><a href="#" class="link-dark rounded">Reports</a></li> -->
+			< !-- <li><a href="#" class="link-dark rounded">Updates</a></li> - ->
+			< !-- <li><a href="#" class="link-dark rounded">Reports</a></li> - ->
 		</ul>
 	</div>
+	-->
 
-	<!-- <img src="src/DofusDB/scraped/big.png"> -->
-
-	<!-- <ul> -->
-	<!-- <li repeat.for="i of breeds.length" style="list-style: none; height: 54px; width: 54px;"> -->
-	<!-- <div repeat.for="i of breeds.length" style="height: 54px !important; width: 54px;"> -->
-	<!--  href="/${breeds[i]}"  -->
-	<!-- repeat.for="i of breeds.length" -->
+	<h4><a href="#" style="color: inherit; text-decoration: inherit;">Accueil</a></h4>
+	
+	<h4>Classes</h4>
 	<div class="d-flex p-2 flex-wrap">
-		<a repeat.for="i of breeds.length" href="/${breeds[i]}"
+		<a repeat.for="i of breeds.length" href="#/${breeds[i]}"
 			css="height: 54px; width: 54px; 
 			margin-bottom: 5px;
 			margin-left: 2px;
@@ -36,11 +35,13 @@
 		</a>
 	</div>
 
+	<h4>Mises à jour</h4>
+	<div></div>
 
 	<!-- </div> -->
 	<!-- </li> -->
 	<!-- </ul> -->
-
+	<!--
 	<div class="container">
 		<div class="row">
 			<div class="col-sm">
@@ -54,9 +55,10 @@
 			</div>
 		</div>
 	</div>
+	-->
 
 
-	<div>
+	<!-- <div> -->
 		<!-- class="ak-panel-content"> -->
 		<!-- 	  
 	  <a href="/fr/mmorpg/encyclopedie/classes/6-piece-ecaflip" class="ak-breed-icon ak-breed-icon-big breed6_0" data-hasqtip="50"></a>
@@ -96,7 +98,7 @@
 	  <a href="/fr/mmorpg/encyclopedie/classes/18-rage-ouginak" class="ak-breed-icon ak-breed-icon-big breed18_0" data-hasqtip="67"></a>
 	  <div class="ak-tooltip hidden" style="display: none;">La rage d'Ouginak</div>
 	 -->
-	</div>
+	<!-- </div> -->
 
 	<!-- <ul>
 		<li repeat.for="br of breeds" style="list-style: none;">

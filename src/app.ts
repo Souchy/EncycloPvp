@@ -1,4 +1,5 @@
 import {Router, RouterConfiguration} from 'aurelia-router';
+import jsonBreeds from './DofusDB/static/classes.json';
 
 export class App {
   public router: Router;
@@ -33,8 +34,28 @@ export class App {
         moduleId: './child-router',
         nav: true,
         title: 'Child Router'
+      },
+      {
+        route: 'breed',
+        name: 'breed',
+        moduleId: './pages/breed',
+        nav: true,
+        title: 'Github Breed'
       }
     ]);
+
+	for(let b of jsonBreeds.orderByIcon) {
+		// console.log("app breed : " + b);
+		config.map([
+			{
+			  route: "" + b,
+			  name: b,
+			  moduleId: './pages/breed',
+			  nav: false,
+			  title: '' + jsonBreeds.french[jsonBreeds.ids[b]-1]
+			}
+		]);
+	}
 
     this.router = router;
   }
