@@ -1,27 +1,11 @@
 <template class="d-flex flex-column flex-shrink-0 p-3">
-	<!-- bg-light -->
 
-
-	<!-- <p>Hello ${name}</p> -->
-
-	
-	<!--
-	<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
-		data-bs-target="#home-collapse" aria-expanded="true">
-		Classes
-	</button>
-	<div class="collapse show" id="home-collapse" style="">
-		<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-			<li repeat.for="br of breeds" style="list-style: none;">
-				<a href="/${br}" class="link-dark rounded">${br}</a>
-			</li>
-			< !-- <li><a href="#" class="link-dark rounded">Updates</a></li> - ->
-			< !-- <li><a href="#" class="link-dark rounded">Reports</a></li> - ->
-		</ul>
-	</div>
-	-->
-
-	<h4><a href="#" style="color: inherit; text-decoration: inherit;">Accueil</a></h4>
+	<h4>
+		<a href="https://github.com/Souchy/EncycloPvp" style="color: inherit; text-decoration: inherit;">
+			Github <i class="fab fa-github"></i>
+		</a>
+	</h4>
+	<!-- <h4><a href="#" style="color: inherit; text-decoration: inherit;">Accueil</a></h4> -->
 	
 	<h4>Classes</h4>
 	<div class="d-flex p-2 flex-wrap">
@@ -35,75 +19,7 @@
 		</a>
 	</div>
 
-	<h4>Mises à jour</h4>
-	<div></div>
-
-	<!-- </div> -->
-	<!-- </li> -->
-	<!-- </ul> -->
-	<!--
-	<div class="container">
-		<div class="row">
-			<div class="col-sm">
-				One of three columns
-			</div>
-			<div class="col-sm">
-				One of three columns
-			</div>
-			<div class="col-sm">
-				One of three columns
-			</div>
-		</div>
-	</div>
-	-->
-
-
-	<!-- <div> -->
-		<!-- class="ak-panel-content"> -->
-		<!-- 	  
-	  <a href="/fr/mmorpg/encyclopedie/classes/6-piece-ecaflip" class="ak-breed-icon ak-breed-icon-big breed6_0" data-hasqtip="50"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">La pièce d'Ecaflip</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/7-mains-eniripsa" class="ak-breed-icon ak-breed-icon-big breed7_0" data-hasqtip="51"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">Les mains d'Eniripsa</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/8-coeur-iop" class="ak-breed-icon ak-breed-icon-big breed8_0" data-hasqtip="52"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">Le cœur d'Iop</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/9-etendue-cra" class="ak-breed-icon ak-breed-icon-big breed9_0" data-hasqtip="53"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">L'étendue de Crâ</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/1-bouclier-feca" class="ak-breed-icon ak-breed-icon-big breed1_0" data-hasqtip="54"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">Le bouclier Féca</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/11-sang-sacrieur" class="ak-breed-icon ak-breed-icon-big breed11_0" data-hasqtip="55"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">Le sang de Sacrieur</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/10-soulier-sadida" class="ak-breed-icon ak-breed-icon-big breed10_0" data-hasqtip="56"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">Le soulier de Sadida</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/2-fouet-osamodas" class="ak-breed-icon ak-breed-icon-big breed2_0" data-hasqtip="57"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">Le fouet d'Osamodas</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/3-doigts-enutrof" class="ak-breed-icon ak-breed-icon-big breed3_0" data-hasqtip="58"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">Les doigts d'Enutrof</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/4-ombre-sram" class="ak-breed-icon ak-breed-icon-big breed4_0 on ak-selected" data-hasqtip="59"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">L'ombre de Sram</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/5-sablier-xelor" class="ak-breed-icon ak-breed-icon-big breed5_0" data-hasqtip="60"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">Le sablier de Xélor</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/12-chopine-pandawa" class="ak-breed-icon ak-breed-icon-big breed12_0" data-hasqtip="61"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">La chopine de Pandawa</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/13-ruse-roublard" class="ak-breed-icon ak-breed-icon-big breed13_0" data-hasqtip="62"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">La ruse du Roublard</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/14-masque-zobal" class="ak-breed-icon ak-breed-icon-big breed14_0" data-hasqtip="63"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">Le masque du Zobal</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/15-vapeur-steamer" class="ak-breed-icon ak-breed-icon-big breed15_0" data-hasqtip="64"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">La vapeur du Steamer</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/16-portail-eliotrope" class="ak-breed-icon ak-breed-icon-big breed16_0" data-hasqtip="65"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">Le portail Eliotrope</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/17-rune-huppermage" class="ak-breed-icon ak-breed-icon-big breed17_0" data-hasqtip="66"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">La rune de l'Huppermage</div>
-	  <a href="/fr/mmorpg/encyclopedie/classes/18-rage-ouginak" class="ak-breed-icon ak-breed-icon-big breed18_0" data-hasqtip="67"></a>
-	  <div class="ak-tooltip hidden" style="display: none;">La rage d'Ouginak</div>
-	 -->
-	<!-- </div> -->
-
-	<!-- <ul>
-		<li repeat.for="br of breeds" style="list-style: none;">
-			<a>${br}</a>
-		</li>
-	</ul> -->
+	<!-- <h4>Mises à jour</h4>
+	<div></div> -->
 
 </template>

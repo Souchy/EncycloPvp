@@ -5,43 +5,22 @@ export class App {
   public router: Router;
 
   public configureRouter(config: RouterConfiguration, router: Router): Promise<void> | PromiseLike<void> | void {
-    config.title = 'Aurelia';
+    config.title = 'EncycloPvp';
     config.map([
-		// {
-		//   route: ['breeds'],
-		//   name: 'breeds',
-		//   moduleId: './pages/breeds',
-		//   nav: true,
-		//   title: 'Classes'
-		// },
-      {
-        route: ['', 'welcome'],
-        name: 'welcome',
-        moduleId: './welcome',
+	  {
+        route: '',
+        name: 'home',
+        moduleId: './home',
         nav: true,
-        title: 'Welcome'
-      },
-      {
-        route: 'users',
-        name: 'users',
-        moduleId: './users',
-        nav: true,
-        title: 'Github Users'
-      },
-      {
-        route: 'child-router',
-        name: 'child-router',
-        moduleId: './child-router',
-        nav: true,
-        title: 'Child Router'
-      },
-      {
-        route: 'breed',
-        name: 'breed',
-        moduleId: './pages/breed',
-        nav: true,
-        title: 'Github Breed'
-      }
+        title: ''
+	  },
+    //   {
+    //     route: 'breed',
+    //     name: 'breed',
+    //     moduleId: './pages/breed',
+    //     nav: true,
+    //     title: 'Breed'
+    //   }
     ]);
 
 	for(let b of jsonBreeds.orderByIcon) {

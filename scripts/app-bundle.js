@@ -116,36 +116,15 @@ var App = (function () {
     function App() {
     }
     App.prototype.configureRouter = function (config, router) {
-        config.title = 'Aurelia';
+        config.title = 'EncycloPvp';
         config.map([
             {
-                route: ['', 'welcome'],
-                name: 'welcome',
-                moduleId: './welcome',
+                route: '',
+                name: 'home',
+                moduleId: './home',
                 nav: true,
-                title: 'Welcome'
+                title: ''
             },
-            {
-                route: 'users',
-                name: 'users',
-                moduleId: './users',
-                nav: true,
-                title: 'Github Users'
-            },
-            {
-                route: 'child-router',
-                name: 'child-router',
-                moduleId: './child-router',
-                nav: true,
-                title: 'Child Router'
-            },
-            {
-                route: 'breed',
-                name: 'breed',
-                moduleId: './pages/breed',
-                nav: true,
-                title: 'Github Breed'
-            }
         ]);
         for (var _i = 0, _a = classes_json_1.default.orderByIcon; _i < _a.length; _i++) {
             var b = _a[_i];
@@ -481,10 +460,8 @@ var aurelia_dependency_injection_1 = require("aurelia-dependency-injection");
 var aurelia_router_1 = require("aurelia-router");
 var sidebar = (function () {
     function sidebar(router) {
-        this.name = "robyn";
         this.router = router;
         this.breeds = classes_json_1.default.orderByIcon;
-        console.log("sidebar breeds: " + this.breeds);
     }
     sidebar = tslib_1.__decorate([
         (0, aurelia_dependency_injection_1.inject)(aurelia_router_1.Router),
@@ -497,7 +474,7 @@ exports.sidebar = sidebar;
 });
 ;
 define('text!components/sidebar.css',[],function(){return ".sidetoggle .collapsed .icon {\n  -webkit-transform: rotate(90deg);\n  -moz-transform: rotate(90deg);\n  -o-transform: rotate(90deg);\n  -ms-transform: rotate(90deg);\n  transform: rotate(90deg);\n  position: absolute;\n}\n.sidetoggle .icon {\n  -webkit-transform: rotate(180deg);\n  -moz-transform: rotate(180deg);\n  -o-transform: rotate(180deg);\n  -ms-transform: rotate(180deg);\n  transform: rotate(180deg);\n  position: absolute;\n}\n";});;
-define('text!components/sidebar.html',[],function(){return "<template class=\"d-flex flex-column flex-shrink-0 p-3\">\n\t<!-- bg-light -->\n\n\n\t<!-- <p>Hello ${name}</p> -->\n\n\t\n\t<!--\n\t<button class=\"btn btn-toggle align-items-center rounded collapsed\" data-bs-toggle=\"collapse\"\n\t\tdata-bs-target=\"#home-collapse\" aria-expanded=\"true\">\n\t\tClasses\n\t</button>\n\t<div class=\"collapse show\" id=\"home-collapse\" style=\"\">\n\t\t<ul class=\"btn-toggle-nav list-unstyled fw-normal pb-1 small\">\n\t\t\t<li repeat.for=\"br of breeds\" style=\"list-style: none;\">\n\t\t\t\t<a href=\"/${br}\" class=\"link-dark rounded\">${br}</a>\n\t\t\t</li>\n\t\t\t< !-- <li><a href=\"#\" class=\"link-dark rounded\">Updates</a></li> - ->\n\t\t\t< !-- <li><a href=\"#\" class=\"link-dark rounded\">Reports</a></li> - ->\n\t\t</ul>\n\t</div>\n\t-->\n\n\t<h4><a href=\"#\" style=\"color: inherit; text-decoration: inherit;\">Accueil</a></h4>\n\t\n\t<h4>Classes</h4>\n\t<div class=\"d-flex p-2 flex-wrap\">\n\t\t<a repeat.for=\"i of breeds.length\" href=\"#/${breeds[i]}\"\n\t\t\tcss=\"height: 54px; width: 54px; \n\t\t\tmargin-bottom: 5px;\n\t\t\tmargin-left: 2px;\n\t\t\tmargin-right: 3px;\n\t\t\tbox-sizing: border-box;\n\t\t\tbackground: transparent url(src/DofusDB/scraped/big.png) 0 0 no-repeat; background-position: -56px ${-57 * i}px;\">\n\t\t</a>\n\t</div>\n\n\t<h4>Mises à jour</h4>\n\t<div></div>\n\n\t<!-- </div> -->\n\t<!-- </li> -->\n\t<!-- </ul> -->\n\t<!--\n\t<div class=\"container\">\n\t\t<div class=\"row\">\n\t\t\t<div class=\"col-sm\">\n\t\t\t\tOne of three columns\n\t\t\t</div>\n\t\t\t<div class=\"col-sm\">\n\t\t\t\tOne of three columns\n\t\t\t</div>\n\t\t\t<div class=\"col-sm\">\n\t\t\t\tOne of three columns\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t-->\n\n\n\t<!-- <div> -->\n\t\t<!-- class=\"ak-panel-content\"> -->\n\t\t<!-- \t  \n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/6-piece-ecaflip\" class=\"ak-breed-icon ak-breed-icon-big breed6_0\" data-hasqtip=\"50\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La pièce d'Ecaflip</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/7-mains-eniripsa\" class=\"ak-breed-icon ak-breed-icon-big breed7_0\" data-hasqtip=\"51\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Les mains d'Eniripsa</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/8-coeur-iop\" class=\"ak-breed-icon ak-breed-icon-big breed8_0\" data-hasqtip=\"52\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le cœur d'Iop</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/9-etendue-cra\" class=\"ak-breed-icon ak-breed-icon-big breed9_0\" data-hasqtip=\"53\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">L'étendue de Crâ</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/1-bouclier-feca\" class=\"ak-breed-icon ak-breed-icon-big breed1_0\" data-hasqtip=\"54\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le bouclier Féca</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/11-sang-sacrieur\" class=\"ak-breed-icon ak-breed-icon-big breed11_0\" data-hasqtip=\"55\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le sang de Sacrieur</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/10-soulier-sadida\" class=\"ak-breed-icon ak-breed-icon-big breed10_0\" data-hasqtip=\"56\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le soulier de Sadida</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/2-fouet-osamodas\" class=\"ak-breed-icon ak-breed-icon-big breed2_0\" data-hasqtip=\"57\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le fouet d'Osamodas</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/3-doigts-enutrof\" class=\"ak-breed-icon ak-breed-icon-big breed3_0\" data-hasqtip=\"58\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Les doigts d'Enutrof</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/4-ombre-sram\" class=\"ak-breed-icon ak-breed-icon-big breed4_0 on ak-selected\" data-hasqtip=\"59\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">L'ombre de Sram</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/5-sablier-xelor\" class=\"ak-breed-icon ak-breed-icon-big breed5_0\" data-hasqtip=\"60\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le sablier de Xélor</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/12-chopine-pandawa\" class=\"ak-breed-icon ak-breed-icon-big breed12_0\" data-hasqtip=\"61\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La chopine de Pandawa</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/13-ruse-roublard\" class=\"ak-breed-icon ak-breed-icon-big breed13_0\" data-hasqtip=\"62\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La ruse du Roublard</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/14-masque-zobal\" class=\"ak-breed-icon ak-breed-icon-big breed14_0\" data-hasqtip=\"63\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le masque du Zobal</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/15-vapeur-steamer\" class=\"ak-breed-icon ak-breed-icon-big breed15_0\" data-hasqtip=\"64\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La vapeur du Steamer</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/16-portail-eliotrope\" class=\"ak-breed-icon ak-breed-icon-big breed16_0\" data-hasqtip=\"65\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">Le portail Eliotrope</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/17-rune-huppermage\" class=\"ak-breed-icon ak-breed-icon-big breed17_0\" data-hasqtip=\"66\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La rune de l'Huppermage</div>\n\t  <a href=\"/fr/mmorpg/encyclopedie/classes/18-rage-ouginak\" class=\"ak-breed-icon ak-breed-icon-big breed18_0\" data-hasqtip=\"67\"></a>\n\t  <div class=\"ak-tooltip hidden\" style=\"display: none;\">La rage d'Ouginak</div>\n\t -->\n\t<!-- </div> -->\n\n\t<!-- <ul>\n\t\t<li repeat.for=\"br of breeds\" style=\"list-style: none;\">\n\t\t\t<a>${br}</a>\n\t\t</li>\n\t</ul> -->\n\n</template>\n";});;
+define('text!components/sidebar.html',[],function(){return "<template class=\"d-flex flex-column flex-shrink-0 p-3\">\n\n\t<h4>\n\t\t<a href=\"https://github.com/Souchy/EncycloPvp\" style=\"color: inherit; text-decoration: inherit;\">\n\t\t\tGithub <i class=\"fab fa-github\"></i>\n\t\t</a>\n\t</h4>\n\t<!-- <h4><a href=\"#\" style=\"color: inherit; text-decoration: inherit;\">Accueil</a></h4> -->\n\t\n\t<h4>Classes</h4>\n\t<div class=\"d-flex p-2 flex-wrap\">\n\t\t<a repeat.for=\"i of breeds.length\" href=\"#/${breeds[i]}\"\n\t\t\tcss=\"height: 54px; width: 54px; \n\t\t\tmargin-bottom: 5px;\n\t\t\tmargin-left: 2px;\n\t\t\tmargin-right: 3px;\n\t\t\tbox-sizing: border-box;\n\t\t\tbackground: transparent url(src/DofusDB/scraped/big.png) 0 0 no-repeat; background-position: -56px ${-57 * i}px;\">\n\t\t</a>\n\t</div>\n\n\t<!-- <h4>Mises à jour</h4>\n\t<div></div> -->\n\n</template>\n";});;
 define('text!details.json',[],function(){return "{\n\n\t\"12981\": {\n\t\t\"text\": [\n\t\t\t\"N'affecte pas le panda si lancé en étant porté.\"\n\t\t]\n\t},\n\t\"13009\": {\n\t\t\"text\": [\n\t\t\t\"Affecte le panda si lancé en étant porté.\"\n\t\t]\n\t},\n\t\"12987\": {\n\t\t\"effects\": [\n\t\t\t\"31 à 34 (dommages Terre) {enemy}\",\n\t\t\t\"-5 PA {fighter}\"\n\t\t]\n\t},\n\t\"12988\": {\n\t\t\"effects\": [\n\t\t\t\"21 à 22 (dommages Feu) {fighter}\",\n\t\t\t\"21 à 22 (dommages Eau) {fighter}\",\n\t\t\t\"21 à 22 (dommages Terre) {fighter}\",\n\t\t\t\"21 à 22 (dommages Air) {fighter}\"\n\t\t]\n\t},\n\t\"13019\": {\n\t\t\"effects\": [\n\t\t\t\"21 à 22 (dommages Feu) {enemy}\",\n\t\t\t\"21 à 22 (dommages Eau) {enemy}\",\n\t\t\t\"21 à 22 (dommages Terre) {enemy}\",\n\t\t\t\"21 à 22 (dommages Air) {enemy}\",\n\t\t\t\"État Pesanteur {enemy}\"\n\t\t]\n\t},\n\t\"12992\": {\n\t\t\"effects\": [\n\t\t\t\"Attire de 1 case(s) {enemy}\",\n\t\t\t\"32 à 34 (dommages Air) {enemy}\",\n\t\t\t\"Réduit les dommages finaux occasionnés de 20% {fighter}\"\n\t\t]\n\t},\n\n\n\t\"12787\": {\n\t\t\"text\": [\n\t\t\t\"6 po au lancé\"\n\t\t]\n\t},\n\t\"12810\": {\n\t\t\"text\": [\n\t\t\t\"4 po au lancé\"\n\t\t]\n\t}\n\n}\n";});
 define('details.json',['text!details.json'],function(m){return JSON.parse(m);});
 define('json!details.json',['details.json'],function(m){return m;});
@@ -511,7 +488,19 @@ exports.default = {
 
 });
 ;
-define('text!home.html',[],function(){return "<template>\n\t<p>Bienvenue sur l'encyclopédie Dofus non-officielle.</p>\n\t<p></p>\n</template>\n";});;
+define('home',['require','exports','module'],function (require, exports, module) {"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Home = void 0;
+var Home = (function () {
+    function Home() {
+    }
+    return Home;
+}());
+exports.Home = Home;
+
+});
+;
+define('text!home.html',[],function(){return "<template>\n\t<h5>Bienvenue</h5>\n\t<!-- <p>Bienvenue sur EncycloPvp</p>\n\t<p></p> -->\n</template>\n";});;
 define('main',['require','exports','module','tslib','bootstrap','./environment'],function (require, exports, module) {"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.configure = void 0;
@@ -551,7 +540,6 @@ var Breed = (function () {
         this.router = router;
     }
     Breed.prototype.created = function (owningView, myView) {
-        console.log("breed created route : " + this.breed);
         try {
             this.breed = this.getRoute();
         }
@@ -576,17 +564,8 @@ var Breed = (function () {
     Breed.prototype.getSpells = function () {
         return spells_json_1.default[this.breed];
     };
-    Breed.prototype.getSpell1 = function () {
-        return this.getSpells()[this.selectedSpellNumber];
-    };
     Breed.prototype.getSpell = function (num) {
         return this.getSpells()[num];
-    };
-    Breed.prototype.getSpellDescription = function () {
-        return this.getSpell1().description;
-    };
-    Breed.prototype.getSpellDescription2 = function (num) {
-        return this.getSpells()[num].description;
     };
     Breed.prototype.getIcon = function (val) {
         if (val) {
@@ -663,7 +642,7 @@ exports.configure = configure;
 
 });
 ;
-define('text!styles.css',[],function(){return "body {\n  margin: 0;\n}\n.main {\n  display: flex;\n  width: 100%;\n  align-items: stretch;\n}\nsidebar {\n  width: 225px;\n  overflow: auto;\n  top: 0;\n  bottom: 0;\n}\n.page-host {\n  overflow-x: hidden;\n  overflow-y: auto;\n  width: 100%;\n  margin-left: 10%;\n  margin-right: 10%;\n  padding: 16px;\n}\n@media print {\n  .page-host {\n    position: absolute;\n    left: 10px;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    overflow-y: inherit;\n    overflow-x: inherit;\n  }\n}\nsection {\n  margin: 1rem;\n}\n.navbar-nav li.loader {\n  margin: 12px 24px 0 6px;\n}\n.pictureDetail {\n  max-width: 425px;\n}\n/* animate page transitions */\nsection.au-enter-active {\n  -webkit-animation: fadeInRight 1s;\n  animation: fadeInRight 1s;\n}\ndiv.au-stagger {\n  /* 50ms will be applied between each successive enter operation */\n  -webkit-animation-delay: 50ms;\n  animation-delay: 50ms;\n}\n.user-card-container.au-enter {\n  opacity: 0;\n}\n.user-card-container.au-enter-active {\n  -webkit-animation: fadeIn 2s;\n  animation: fadeIn 2s;\n}\n.user-card {\n  overflow: hidden;\n  position: relative;\n  border: 1px solid #CCC;\n  border-radius: 8px;\n  text-align: center;\n  padding: 0;\n  background-color: #337ab7;\n  color: #88acd9;\n  margin-bottom: 32px;\n  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);\n}\n.user-card .content {\n  margin-top: 10px;\n}\n.user-card .content .name {\n  color: white;\n  text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);\n  font-size: 18px;\n}\n.user-card .header-bg {\n  /* This stretches the canvas across the entire hero unit */\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 70px;\n  border-bottom: 1px #FFF solid;\n  border-radius: 6px 6px 0 0;\n}\n.user-card .avatar {\n  position: relative;\n  margin-top: 15px;\n  z-index: 100;\n}\n.user-card .avatar img {\n  width: 100px;\n  height: 100px;\n  -webkit-border-radius: 50%;\n  -moz-border-radius: 50%;\n  border-radius: 50%;\n  border: 2px #FFF solid;\n}\n/* animation definitions */\n@-webkit-keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none;\n  }\n}\n@keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    -ms-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    -ms-transform: none;\n    transform: none;\n  }\n}\n@-webkit-keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n";});;
+define('text!styles.css',[],function(){return "body {\n  margin: 0;\n}\n.main {\n  display: flex;\n  width: 100%;\n  align-items: stretch;\n}\nsidebar {\n  width: 225px;\n  overflow: auto;\n  top: 0;\n  bottom: 0;\n}\n.page-host {\n  overflow-x: hidden;\n  overflow-y: auto;\n  width: 100%;\n  margin-left: 10%;\n  margin-right: 10%;\n  padding: 16px;\n}\n@media print {\n  .page-host {\n    position: absolute;\n    left: 10px;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    overflow-y: inherit;\n    overflow-x: inherit;\n  }\n}\nsection {\n  margin: 1rem;\n}\n.navbar-nav li.loader {\n  margin: 12px 24px 0 6px;\n}\n/* animate page transitions */\nsection.au-enter-active {\n  -webkit-animation: fadeInRight 1s;\n  animation: fadeInRight 1s;\n}\ndiv.au-stagger {\n  /* 50ms will be applied between each successive enter operation */\n  -webkit-animation-delay: 50ms;\n  animation-delay: 50ms;\n}\n/* animation definitions */\n@-webkit-keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    transform: none;\n  }\n}\n@keyframes fadeInRight {\n  0% {\n    opacity: 0;\n    -webkit-transform: translate3d(100%, 0, 0);\n    -ms-transform: translate3d(100%, 0, 0);\n    transform: translate3d(100%, 0, 0);\n  }\n  100% {\n    opacity: 1;\n    -webkit-transform: none;\n    -ms-transform: none;\n    transform: none;\n  }\n}\n@-webkit-keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n@keyframes fadeIn {\n  0% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n";});;
 define('users',['require','exports','module','tslib','aurelia-framework','aurelia-fetch-client'],function (require, exports, module) {"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Users = void 0;

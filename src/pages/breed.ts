@@ -15,15 +15,10 @@ export class Breed {
 	// index number in the list of spells of the class, not the actual spell id
 	public selectedSpellNumber: number = 0;
 
-
 	constructor(router) {
 		this.router = router;
 		// console.log("breed ctor");
 	}
-
-	// public created() {
-	// 	console.log("breed current route : " + this.getRoute());
-	// }
 
 	// public activate(params, routeConfig, navigationInstruction) {
 	// 	try {
@@ -35,12 +30,11 @@ export class Breed {
 	// }
 
 	public created(owningView, myView) { // :View
-		console.log("breed created route : " + this.breed);
 		try {
 			this.breed = this.getRoute()
 		} catch(err) {
-			
 		}
+		// console.log("breed created route : " + this.breed);
 	}
 
 	// public bind(bindingContext: Object, overrideContext: Object) {
@@ -64,7 +58,6 @@ export class Breed {
 
 	public selectSpell(id: number) {
 		this.selectedSpellNumber = id;
-
 	}
 
 	public getId(): number {
@@ -78,18 +71,8 @@ export class Breed {
 		return jsonSpells[this.breed];
 	}
 
-	public getSpell1(): any {
-		return this.getSpells()[this.selectedSpellNumber];
-	}
-
 	public getSpell(num): any {
 		return this.getSpells()[num];
-	}
-	public getSpellDescription() {
-		return this.getSpell1().description;
-	}
-	public getSpellDescription2(num) {
-		return this.getSpells()[num].description;
 	}
 
 	public getIcon(val: string) {
@@ -98,9 +81,6 @@ export class Breed {
 		// <script type=\"application/json\">{\"manual\":true,\"tooltip\":{\"content\":{\"title\":\"\",\"text\":\"Points d'action\"},
 		// \"style\":{\"classes\":\"ak-tooltip-content\"}},\"forceOnTouch\":true}</script>"
 		if(val) {
-			// let start = val.indexOf("ak-tx");
-			// let iconClass = val.substring(start).split("\"")[0];
-			// console.log("iconClass: " + iconClass);
 			return db.getModIconStyle(val);
 		}
 
