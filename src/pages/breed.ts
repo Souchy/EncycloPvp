@@ -116,16 +116,16 @@ export class Breed {
 		let str: string = "";
 		if(detail.text) {
 			for(let s of detail.text) {
-				str += db.insertEntityIcon(s);
-				// str += "\n";
-				str += "<br/>";
+				str += s; //db.insertEntityIcon(s);
+				str += "\n";
+				// str += "<br/>";
 			}
 		}
 		if(detail.effects) {
 			for(let s of detail.effects) {
-				str += db.insertEntityIcon(s);
-				// str += "\n";
-				str += "<br/>";
+				str += s; //db.insertEntityIcon(s);
+				str += "\n";
+				// str += "<br/>";
 			}
 		}
 		return str;
