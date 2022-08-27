@@ -95,8 +95,9 @@ var db = (function () {
         return "";
     };
     db.sprite = function (x, y) {
-        return "vertical-align: middle; width: 22px; height: 22px; background-image: url('/src/DofusDB/scraped/icons.png'); background-position: -" + x + "px; background-position-y: -" + y + "px;";
+        return "vertical-align: middle; width: 22px; height: 22px; background-image: url('src/DofusDB/scraped/icons.png'); background-position: -" + x + "px; background-position-y: -" + y + "px;";
     };
+    db.rootUrlPath = "";
     return db;
 }());
 exports.db = db;
@@ -146,7 +147,7 @@ exports.App = App;
 
 });
 ;
-define('text!app.html',[],function(){return "<template>\n  <require from=\"bootstrap/dist/css/bootstrap.min.css\"></require>\n  <require from=\"@fortawesome/fontawesome-free/css/all.min.css\"></require>\n  <require from=\"./styles.css\"></require>\n  <!-- <require from=\"./nav-bar.html\"></require> -->\n  <require from=\"./components/sidebar\"></require>\n\n\n\n  <!-- <nav-bar router.bind=\"router\"></nav-bar> -->\n\n\n  <div class=\"main\">\n\t<sidebar></sidebar>\n  \n\t<div class=\"b-example-divider\">\n\t</div>\n\n\t<div class=\"page-host\">\n\t  <router-view></router-view>\n\t</div>\n  </div>\n\n</template>\n";});;
+define('text!app.html',[],function(){return "<template>\n  <require from=\"bootstrap/dist/css/bootstrap.min.css\"></require>\n  <require from=\"@fortawesome/fontawesome-free/css/all.min.css\"></require>\n  <require from=\"./styles.css\"></require>\n  <!-- <require from=\"./nav-bar.html\"></require> -->\n  <require from=\"./components/sidebar\"></require>\n\n\n  <!-- <nav-bar router.bind=\"router\"></nav-bar> -->\n\n\n  <div class=\"main\">\n\t<sidebar></sidebar>\n  \n\t<div class=\"b-example-divider\">\n\t</div>\n\n\t<div class=\"page-host\">\n\t  <router-view></router-view>\n\t</div>\n  </div>\n\n</template>\n";});;
 define('blur-image',['require','exports','module','tslib','aurelia-framework'],function (require, exports, module) {"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BlurImageCustomAttribute = void 0;
