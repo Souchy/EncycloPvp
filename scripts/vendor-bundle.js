@@ -32756,6 +32756,7 @@ function _aureliaConfigureModuleLoader(){requirejs.config({
   "shim": {},
   "bundles": {
     "app-bundle": [
+      "text!DofusDB/README.html",
       "text!DofusDB/scraped/petIds.json",
       "DofusDB/scraped/petIds.json",
       "json!DofusDB/scraped/petIds.json",
@@ -32785,8 +32786,11 @@ function _aureliaConfigureModuleLoader(){requirejs.config({
       "details.json",
       "json!details.json",
       "environment",
+      "hello",
+      "text!hello.html",
       "home",
       "text!home.html",
+      "text!home1.html",
       "main",
       "pages/breed",
       "text!pages/breed.css",

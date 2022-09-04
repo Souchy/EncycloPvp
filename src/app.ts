@@ -6,6 +6,7 @@ export class App {
 
   public configureRouter(config: RouterConfiguration, router: Router): Promise<void> | PromiseLike<void> | void {
     config.title = 'EncycloPvp';
+	// config.options.root = '/';
     config.map([
 	  {
         route: '',
@@ -14,13 +15,13 @@ export class App {
         nav: true,
         title: ''
 	  },
-    //   {
-    //     route: 'breed',
-    //     name: 'breed',
-    //     moduleId: './pages/breed',
+	//   {
+    //     route: 'hello',
+    //     name: 'hello',
+    //     moduleId: './hello',
     //     nav: true,
-    //     title: 'Breed'
-    //   }
+    //     title: ''
+	//   },
     ]);
 
 	for(let b of jsonBreeds.orderByIcon) {
