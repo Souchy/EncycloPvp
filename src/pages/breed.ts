@@ -87,7 +87,9 @@ export class Breed {
 		return "";
 	}
 
-
+	public getDetailsObj(num) {
+		return details[this.getSpell(num).id];
+	}
 	public getDetails(num) {
 		let detail = details[this.getSpell(num).id];
 		if(!detail) {
@@ -109,6 +111,18 @@ export class Breed {
 			}
 		}
 		return str;
+	}
+
+	public removeFighterIconTag(str: string) {
+		return str.substring(0, str.indexOf("{"));
+	}
+	public getFighterIcon(val: string) {
+		if(val) {
+			let style = db.getEntityIconStyle(val);
+			// console.log("get fighter style: " + style);
+			return style;
+		}
+		return "";
 	}
 
 }
