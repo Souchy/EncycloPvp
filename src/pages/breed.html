@@ -42,7 +42,16 @@
 					<tbody>
 						<tr repeat.for="e of getSpell(selectedSpellNumber).effects">
 							<td class="">${e.effect}</td>
+							<td></td>
 							<td class="" style.bind="getIcon(e.effect)"></td>
+						</tr>
+						
+						<tr repeat.for="i of getDetailsObj(selectedSpellNumber).effects.length" height="32px;">
+							<td class="">
+								${removeFighterIconTag(getDetailsObj(selectedSpellNumber).effects[i])} 
+							</td>
+							<td class="" style.bind="getFighterIcon(getDetailsObj(selectedSpellNumber).effects[i])"></td>
+							<td class="" style.bind="getIcon(getDetailsObj(selectedSpellNumber).effects[i])"></td>
 						</tr>
 					</tbody>
 				</table>
@@ -125,7 +134,7 @@
 				</tr>
 			</table> -->
 			<p>${getDetailsObj(selectedSpellNumber).text}</p>
-			<table class="table table-striped table-sm table-borderless" style="width:45%; margin-right: auto; height: auto;">
+			<!-- <table class="table table-striped table-sm table-borderless" style="width:45%; margin-right: auto; height: auto;">
 				<tbody>
 					<tr repeat.for="i of getDetailsObj(selectedSpellNumber).effects.length" height="32px;">
 						<td class="">
@@ -133,14 +142,9 @@
 						</td>
 						<td class="" style.bind="getFighterIcon(getDetailsObj(selectedSpellNumber).effects[i])"></td>
 						<td class="" style.bind="getIcon(getDetailsObj(selectedSpellNumber).effects[i])"></td>
-						<!-- <td class="" style="text-align: right;">${
-							getSpell(selectedSpellNumber).details[i+4].val.includes('static') ? 
-							getSpell(selectedSpellNumber).details[i+4].info : 
-							getSpell(selectedSpellNumber).details[i+4].val
-						}</td> -->
 					</tr>
 				</tbody>
-			</table>
+			</table> -->
 
 		</div> <!-- fin détails additionel -->
 
