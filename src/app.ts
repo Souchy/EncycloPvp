@@ -8,12 +8,19 @@ export class App {
     config.title = 'EncycloPvp';
 	// config.options.root = '/';
     config.map([
+	//   {
+    //     route: '',
+    //     name: 'home',
+    //     moduleId: './home',
+    //     nav: true,
+    //     title: ''
+	//   },
 	  {
         route: '',
-        name: 'home',
-        moduleId: './home',
+        name: jsonBreeds.orderByIcon[0],
+		moduleId: './pages/breed',
         nav: true,
-        title: ''
+        title: '' + jsonBreeds.french[jsonBreeds.ids[jsonBreeds.orderByIcon[0]]-1]
 	  },
 	//   {
     //     route: 'hello',
